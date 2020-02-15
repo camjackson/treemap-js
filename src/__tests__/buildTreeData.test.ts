@@ -21,13 +21,13 @@ describe('thing', () => {
         size: 333,
         children: [
           expect.objectContaining({
-            name: 'something',
-            size: 100,
+            name: 'something-else',
+            size: 200,
             children: null,
           }),
           expect.objectContaining({
-            name: 'something-else',
-            size: 200,
+            name: 'something',
+            size: 100,
             children: null,
           }),
           expect.objectContaining({
@@ -35,13 +35,13 @@ describe('thing', () => {
             size: 33,
             children: [
               expect.objectContaining({
-                name: 'first',
-                size: 10,
+                name: 'second',
+                size: 20,
                 children: null,
               }),
               expect.objectContaining({
-                name: 'second',
-                size: 20,
+                name: 'first',
+                size: 10,
                 children: null,
               }),
               expect.objectContaining({

@@ -3,19 +3,19 @@ export type InputFileWithSize = {
   size: number;
 };
 
-export class OutputFileWithSize {
+export class TreeNode {
   constructor(
-    private name: string,
-    private size: number,
-    private children: OutputFileWithSize[],
+    public name: string,
+    public size: number,
+    public children: TreeNode[],
   ) {}
 
   static newFile(name: string, size: number) {
-    return new OutputFileWithSize(name, size, null);
+    return new TreeNode(name, size, null);
   }
 
   static newDirectory(name: string) {
-    return new OutputFileWithSize(name, 0, []);
+    return new TreeNode(name, 0, []);
   }
 
   public addFile = (inputFile: InputFileWithSize) => {
@@ -25,9 +25,7 @@ export class OutputFileWithSize {
     );
 
     if (otherPathSegments.length === 0) {
-      this.children.push(
-        OutputFileWithSize.newFile(firstPathSegment, inputFile.size),
-      );
+      this.children.push(TreeNode.newFile(firstPathSegment, inputFile.size));
     } else {
       const inputWithoutFirstPathSegment: InputFileWithSize = {
         fullPath: otherPathSegments.join('/'),
@@ -40,13 +38,25 @@ export class OutputFileWithSize {
     }
   };
 
-  private getOrAddSubDirectory(name: string): OutputFileWithSize {
-    let result: OutputFileWithSize = this.children.find(
-      child => child.name === name,
-    );
+  public sortRecursive() {
+    if (this.children) {
+      this.children.forEach(child => child.sortRecursive());
+
+      this.children.sort((child1, child2) => {
+        if (child1.size > child2.size) return -1;
+        if (child1.size < child2.size) return 1;
+        return 0;
+      });
+    }
+
+    return this;
+  }
+
+  private getOrAddSubDirectory(name: string): TreeNode {
+    let result: TreeNode = this.children.find(child => child.name === name);
 
     if (!result) {
-      result = OutputFileWithSize.newDirectory(name);
+      result = TreeNode.newDirectory(name);
       this.children.push(result);
     }
 
@@ -54,12 +64,12 @@ export class OutputFileWithSize {
   }
 }
 
-const buildTreeData = (rawData: InputFileWithSize[]): OutputFileWithSize => {
-  const result: OutputFileWithSize = OutputFileWithSize.newDirectory('.');
+const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
+  const result: TreeNode = TreeNode.newDirectory('.');
 
   rawData.forEach(result.addFile);
 
-  return result;
+  return result.sortRecursive();
 };
 
 export default buildTreeData;
