@@ -9,8 +9,13 @@ function App() {
   const svgRef = useRef(null);
   const [svgDimensions, setSvgDimensions] = useState({ width: 1, height: 1 });
   useLayoutEffect(() => {
-    const rect = svgRef.current.getBoundingClientRect();
-    setSvgDimensions({ width: rect.width, height: rect.height });
+    const onResize = () => {
+      const rect = svgRef.current.getBoundingClientRect();
+      setSvgDimensions({ width: rect.width, height: rect.height });
+    };
+    onResize();
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   }, [svgRef]);
 
   return (
