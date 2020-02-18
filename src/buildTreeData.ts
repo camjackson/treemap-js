@@ -8,14 +8,15 @@ export class TreeNode {
     public name: string,
     public size: number,
     public children: TreeNode[],
+    public parent: TreeNode,
   ) {}
 
-  static newFile(name: string, size: number) {
-    return new TreeNode(name, size, null);
+  static newFile(name: string, size: number, parent: TreeNode) {
+    return new TreeNode(name, size, null, parent);
   }
 
-  static newDirectory(name: string) {
-    return new TreeNode(name, 0, []);
+  static newDirectory(name: string, parent: TreeNode) {
+    return new TreeNode(name, 0, [], parent);
   }
 
   public addFile = (inputFile: InputFileWithSize) => {
@@ -25,7 +26,9 @@ export class TreeNode {
     );
 
     if (otherPathSegments.length === 0) {
-      this.children.push(TreeNode.newFile(firstPathSegment, inputFile.size));
+      this.children.push(
+        TreeNode.newFile(firstPathSegment, inputFile.size, this),
+      );
     } else {
       const inputWithoutFirstPathSegment: InputFileWithSize = {
         fullPath: otherPathSegments.join('/'),
@@ -56,7 +59,7 @@ export class TreeNode {
     let result: TreeNode = this.children.find(child => child.name === name);
 
     if (!result) {
-      result = TreeNode.newDirectory(name);
+      result = TreeNode.newDirectory(name, this);
       this.children.push(result);
     }
 
@@ -65,7 +68,7 @@ export class TreeNode {
 }
 
 const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
-  const result: TreeNode = TreeNode.newDirectory('.');
+  const result: TreeNode = TreeNode.newDirectory('.', null);
 
   rawData.forEach(result.addFile);
 

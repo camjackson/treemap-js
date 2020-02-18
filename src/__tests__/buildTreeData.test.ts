@@ -1,7 +1,4 @@
-import buildTreeData, {
-  InputFileWithSize,
-  OutputFileWithSize,
-} from '../buildTreeData';
+import buildTreeData, { InputFileWithSize, TreeNode } from '../buildTreeData';
 
 describe('thing', () => {
   const inputFiles: InputFileWithSize[] = [
@@ -13,7 +10,7 @@ describe('thing', () => {
   ];
 
   it('works', () => {
-    const result: OutputFileWithSize = buildTreeData(inputFiles);
+    const result: TreeNode = buildTreeData(inputFiles);
 
     expect(result).toEqual(
       expect.objectContaining({

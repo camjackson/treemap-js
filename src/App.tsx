@@ -18,6 +18,13 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   }, [svgRef]);
 
+  const [currentRootNode, setCurrentRootNode] = useState(treeData);
+  const [currentDepth, setCurrentDepth] = useState(0);
+  const drillTo = (node: TreeNode, depth: number) => () => {
+    setCurrentRootNode(node);
+    setCurrentDepth(depth);
+  };
+
   return (
     <div className="w-full h-full flex flex-col">
       <h1 className="text-center text-3xl">Treemap</h1>
@@ -32,8 +39,10 @@ function App() {
             y={0}
             width={svgDimensions.width}
             height={svgDimensions.height}
-            treeData={treeData}
-            depth={0}
+            treeData={currentRootNode}
+            depth={currentDepth}
+            isCurrentRoot
+            drillTo={drillTo}
           />
         </svg>
       </main>

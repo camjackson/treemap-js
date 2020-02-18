@@ -9,6 +9,8 @@ type Props = {
   height: number;
   treeData: TreeNode;
   depth: number;
+  isCurrentRoot: boolean;
+  drillTo: (treeData: TreeNode, depth: number) => () => void;
 };
 
 const paddingX = 10;
@@ -24,7 +26,16 @@ const colourClasses = [
   'text-pink-400 hover:text-pink-600',
 ];
 
-const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
+const Treemap: FC<Props> = ({
+  x,
+  y,
+  width,
+  height,
+  treeData,
+  depth,
+  isCurrentRoot,
+  drillTo,
+}) => {
   const colour = colourClasses[depth % colourClasses.length];
 
   const childSizes = (treeData.children || []).map(child => child.size);
@@ -36,6 +47,9 @@ const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
     paddingX,
     paddingY,
   );
+  const parent = treeData.parent;
+  const drillDown = drillTo(treeData, depth);
+  const drillUp = parent ? drillTo(parent, depth - 1) : () => {};
 
   return (
     <>
@@ -45,7 +59,8 @@ const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
         width={width}
         height={height}
         fill="none"
-        className={`stroke-black fill-current ${colour}`}
+        className={`stroke-black fill-current cursor-pointer ${colour}`}
+        onClick={isCurrentRoot ? drillUp : drillDown}
       />
       <text textAnchor="middle" x={x + width / 2} y={y + textHeight + 3}>
         {treeData.name}
@@ -62,6 +77,8 @@ const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
               height={rect.height}
               treeData={child}
               depth={depth + 1}
+              isCurrentRoot={false}
+              drillTo={drillTo}
             />
           );
         })}
