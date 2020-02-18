@@ -1,9 +1,17 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import Treemap from './Treemap';
-import buildTreeData, { TreeNode } from './buildTreeData';
-import exampleData from './exampleData';
+import {
+  buildTreeData,
+  buildTreeDataFromClocData,
+  TreeNode,
+} from './buildTreeData';
+import mortgageData from './exampleData/mortgage';
+import reactRouterClocData from './exampleData/react-router-cloc.json';
 
-const treeData: TreeNode = buildTreeData(exampleData);
+const examples = {
+  mortgage: buildTreeData(mortgageData),
+  reactRouter: buildTreeDataFromClocData(reactRouterClocData),
+};
 
 function App() {
   const svgRef = useRef(null);
@@ -18,7 +26,7 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   }, [svgRef]);
 
-  const [currentRootNode, setCurrentRootNode] = useState(treeData);
+  const [currentRootNode, setCurrentRootNode] = useState(examples.reactRouter);
   const [currentDepth, setCurrentDepth] = useState(0);
   const drillTo = (node: TreeNode, depth: number) => () => {
     setCurrentRootNode(node);
@@ -27,7 +35,7 @@ function App() {
 
   return (
     <div className="w-full h-full flex flex-col">
-      <h1 className="text-center text-3xl">Treemap</h1>
+      <h1 className="text-center text-3xl">Treemap (of react-router.git)</h1>
       <main className="flex-1 p-2">
         <svg
           ref={svgRef}

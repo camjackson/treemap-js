@@ -1,4 +1,4 @@
-import { InputFileWithSize } from './buildTreeData';
+import { InputFileWithSize } from '../buildTreeData';
 
 const exampleData: InputFileWithSize[] = [
   { fullPath: 'src/scenario/graph/RepaymentsGraph.tsx', size: 36 },

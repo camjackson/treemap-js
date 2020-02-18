@@ -1,0 +1,1691 @@
+{
+  "header": {
+    "cloc_url": "github.com/AlDanial/cloc",
+    "cloc_version": "1.84",
+    "elapsed_seconds": 2.16021919250488,
+    "n_files": 279,
+    "n_lines": 79656,
+    "files_per_second": 129.153560420175,
+    "lines_per_second": 36874.0358739406
+  },
+  "./package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 13432,
+    "language": "JSON"
+  },
+  "./website/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 10434,
+    "language": "JSON"
+  },
+  "./packages/react-router-config/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9667,
+    "language": "JSON"
+  },
+  "./packages/react-router-dom/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9655,
+    "language": "JSON"
+  },
+  "./packages/react-router/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9585,
+    "language": "JSON"
+  },
+  "./packages/react-router-native/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5974,
+    "language": "JSON"
+  },
+  "./website/modules/components/EnvironmentSmall.js": {
+    "blank": 49,
+    "comment": 6,
+    "code": 520,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/experimental/StackRoute.js": {
+    "blank": 41,
+    "comment": 11,
+    "code": 414,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/__tests__/NavLink-test.js": {
+    "blank": 39,
+    "comment": 0,
+    "code": 414,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/modules/__tests__/renderRoutes-test.js": {
+    "blank": 41,
+    "comment": 9,
+    "code": 386,
+    "language": "JavaScript"
+  },
+  "./CHANGES.md": {
+    "blank": 176,
+    "comment": 0,
+    "code": 376,
+    "language": "Markdown"
+  },
+  "./packages/react-router/modules/__tests__/Route-test.js": {
+    "blank": 69,
+    "comment": 0,
+    "code": 368,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/index.js": {
+    "blank": 43,
+    "comment": 178,
+    "code": 307,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/Switch-test.js": {
+    "blank": 59,
+    "comment": 0,
+    "code": 288,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/guides/philosophy.md": {
+    "blank": 53,
+    "comment": 0,
+    "code": 235,
+    "language": "Markdown"
+  },
+  "./packages/react-router/modules/__tests__/StaticRouter-test.js": {
+    "blank": 49,
+    "comment": 0,
+    "code": 231,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/guides/migrating.md": {
+    "blank": 76,
+    "comment": 0,
+    "code": 198,
+    "language": "Markdown"
+  },
+  "./packages/react-router-config/README.md": {
+    "blank": 57,
+    "comment": 0,
+    "code": 196,
+    "language": "Markdown"
+  },
+  "./website/modules/animated/Interpolation.js": {
+    "blank": 38,
+    "comment": 63,
+    "code": 195,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/guides/server-rendering.md": {
+    "blank": 45,
+    "comment": 0,
+    "code": 194,
+    "language": "Markdown"
+  },
+  "./website/modules/components/EnvironmentLarge.js": {
+    "blank": 18,
+    "comment": 2,
+    "code": 190,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/SpringAnimation.js": {
+    "blank": 30,
+    "comment": 23,
+    "code": 186,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/guides/animation.md": {
+    "blank": 39,
+    "comment": 0,
+    "code": 186,
+    "language": "Markdown"
+  },
+  "./website/modules/base.css": {
+    "blank": 39,
+    "comment": 4,
+    "code": 176,
+    "language": "CSS"
+  },
+  "./packages/react-router/docs/guides/testing.md": {
+    "blank": 32,
+    "comment": 0,
+    "code": 168,
+    "language": "Markdown"
+  },
+  "./packages/react-router-config/modules/__tests__/integration-test.js": {
+    "blank": 20,
+    "comment": 4,
+    "code": 166,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/FakeBrowser.js": {
+    "blank": 10,
+    "comment": 0,
+    "code": 155,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/guides/blocked-updates.md": {
+    "blank": 46,
+    "comment": 0,
+    "code": 149,
+    "language": "Markdown"
+  },
+  "./website/modules/examples/ModalGallery.js": {
+    "blank": 14,
+    "comment": 22,
+    "code": 147,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/Route.md": {
+    "blank": 60,
+    "comment": 0,
+    "code": 144,
+    "language": "Markdown"
+  },
+  "./website/webpack.config.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 138,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/package-lock.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 135,
+    "language": "JSON"
+  },
+  "./website/modules/components/Home/Header.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 134,
+    "language": "JavaScript"
+  },
+  "./website/webpack/markdown-loader.js": {
+    "blank": 20,
+    "comment": 24,
+    "code": 128,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/__tests__/Link-test.js": {
+    "blank": 29,
+    "comment": 0,
+    "code": 124,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/withRouter-test.js": {
+    "blank": 22,
+    "comment": 0,
+    "code": 124,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/Auth.js": {
+    "blank": 15,
+    "comment": 0,
+    "code": 124,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/gradlew": {
+    "blank": 20,
+    "comment": 21,
+    "code": 123,
+    "language": "Bourne Again Shell"
+  },
+  "./website/modules/components/MailingListSignup.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 121,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/guides/quick-start.md": {
+    "blank": 17,
+    "comment": 0,
+    "code": 120,
+    "language": "Markdown"
+  },
+  "./website/modules/animated/AnimatedValue.js": {
+    "blank": 21,
+    "comment": 75,
+    "code": 116,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/__tests__/selectors-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 115,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/Router-test.js": {
+    "blank": 22,
+    "comment": 0,
+    "code": 113,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/PreventingTransitions.js": {
+    "blank": 15,
+    "comment": 0,
+    "code": 112,
+    "language": "JavaScript"
+  },
+  "./website/modules/docs/Web.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 112,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/__tests__/ConnectedRouter-test.js": {
+    "blank": 26,
+    "comment": 0,
+    "code": 111,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/Animation.js": {
+    "blank": 16,
+    "comment": 16,
+    "code": 111,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/bezier.js": {
+    "blank": 15,
+    "comment": 13,
+    "code": 107,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/examples/AuthExample.js": {
+    "blank": 17,
+    "comment": 0,
+    "code": 106,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/PanGesture.js": {
+    "blank": 24,
+    "comment": 1,
+    "code": 106,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/Route.js": {
+    "blank": 23,
+    "comment": 3,
+    "code": 105,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/BasicExample.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 102,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/ScrollToDoc.js": {
+    "blank": 17,
+    "comment": 0,
+    "code": 99,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 98,
+    "language": "JSON"
+  },
+  "./website/modules/examples/Auth.js": {
+    "blank": 12,
+    "comment": 5,
+    "code": 97,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/__tests__/actions-test.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 96,
+    "language": "JavaScript"
+  },
+  "./FAQ.md": {
+    "blank": 31,
+    "comment": 0,
+    "code": 95,
+    "language": "Markdown"
+  },
+  "./packages/react-router/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 94,
+    "language": "JSON"
+  },
+  "./packages/react-router-native/examples/ExperimentalExample.js": {
+    "blank": 10,
+    "comment": 3,
+    "code": 91,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/TimingAnimation.js": {
+    "blank": 12,
+    "comment": 10,
+    "code": 91,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/StaticRouter.js": {
+    "blank": 24,
+    "comment": 6,
+    "code": 91,
+    "language": "JavaScript"
+  },
+  "./website/modules/docs/Native.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 89,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/RouteConfig.js": {
+    "blank": 12,
+    "comment": 10,
+    "code": 89,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/guides/basic-components.md": {
+    "blank": 28,
+    "comment": 0,
+    "code": 86,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/docs/guides/quick-start.md": {
+    "blank": 19,
+    "comment": 0,
+    "code": 85,
+    "language": "Markdown"
+  },
+  "./packages/react-router/modules/__tests__/matchPath-test.js": {
+    "blank": 9,
+    "comment": 1,
+    "code": 83,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/Easing.js": {
+    "blank": 23,
+    "comment": 31,
+    "code": 83,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 80,
+    "language": "JSON"
+  },
+  "./website/modules/animated/AnimatedValueXY.js": {
+    "blank": 14,
+    "comment": 64,
+    "code": 80,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/Redirect.js": {
+    "blank": 16,
+    "comment": 4,
+    "code": 79,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/modules/__tests__/matchRoutes-test.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 79,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/SpringConfig.js": {
+    "blank": 16,
+    "comment": 10,
+    "code": 77,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/EnvironmentHeader.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 76,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/guides/scroll-restoration.md": {
+    "blank": 26,
+    "comment": 0,
+    "code": 75,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/examples/Sidebar.js": {
+    "blank": 6,
+    "comment": 13,
+    "code": 72,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/__tests__/Link-test.js": {
+    "blank": 14,
+    "comment": 0,
+    "code": 71,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/NoMatch.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 70,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/withRouter.md": {
+    "blank": 21,
+    "comment": 0,
+    "code": 70,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/NavLink.js": {
+    "blank": 7,
+    "comment": 4,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/integration-test.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Environment.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/index.android.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 68,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/StaticRouter.md": {
+    "blank": 25,
+    "comment": 0,
+    "code": 67,
+    "language": "Markdown"
+  },
+  "./website/modules/examples/PreventingTransitions.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 67,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/Info.plist": {
+    "blank": 0,
+    "comment": 0,
+    "code": 66,
+    "language": "XML"
+  },
+  "./website/modules/animated/DecayAnimation.js": {
+    "blank": 13,
+    "comment": 10,
+    "code": 66,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/Router.js": {
+    "blank": 13,
+    "comment": 6,
+    "code": 65,
+    "language": "JavaScript"
+  },
+  "./CONTRIBUTING.md": {
+    "blank": 29,
+    "comment": 0,
+    "code": 65,
+    "language": "Markdown"
+  },
+  "./website/modules/examples/Sidebar.js": {
+    "blank": 5,
+    "comment": 13,
+    "code": 64,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/RouteConfig.js": {
+    "blank": 11,
+    "comment": 10,
+    "code": 64,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/gradlew.bat": {
+    "blank": 24,
+    "comment": 2,
+    "code": 64,
+    "language": "DOS Batch"
+  },
+  "./packages/react-router-redux/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 63,
+    "language": "JSON"
+  },
+  "./packages/react-router-dom/modules/Link.js": {
+    "blank": 14,
+    "comment": 3,
+    "code": 63,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/Basic.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 61,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/CustomLink.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 61,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/AnimatedProps.js": {
+    "blank": 9,
+    "comment": 10,
+    "code": 61,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/Switch.js": {
+    "blank": 10,
+    "comment": 3,
+    "code": 60,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/api/NavLink.md": {
+    "blank": 21,
+    "comment": 0,
+    "code": 60,
+    "language": "Markdown"
+  },
+  "./website/modules/components/NativeExample.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 60,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/AnimatedTransform.js": {
+    "blank": 8,
+    "comment": 11,
+    "code": 59,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/Params.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 59,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/generatePath-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 59,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/README.md": {
+    "blank": 21,
+    "comment": 0,
+    "code": 59,
+    "language": "Markdown"
+  },
+  "./website/modules/animated/AnimatedStyle.js": {
+    "blank": 8,
+    "comment": 10,
+    "code": 58,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/WebExample.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 58,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/AnimatedAddition.js": {
+    "blank": 11,
+    "comment": 10,
+    "code": 57,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/AnimatedMultiplication.js": {
+    "blank": 11,
+    "comment": 10,
+    "code": 57,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/guides/Installation.md": {
+    "blank": 17,
+    "comment": 0,
+    "code": 57,
+    "language": "Markdown"
+  },
+  "./website/modules/animated/createAnimatedComponent.js": {
+    "blank": 15,
+    "comment": 37,
+    "code": 56,
+    "language": "JavaScript"
+  },
+  "./website/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 56,
+    "language": "JSON"
+  },
+  "./website/modules/animated/AnimatedInterpolation.js": {
+    "blank": 11,
+    "comment": 10,
+    "code": 56,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/BoringExample.js": {
+    "blank": 5,
+    "comment": 0,
+    "code": 55,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/Redirect.md": {
+    "blank": 22,
+    "comment": 0,
+    "code": 54,
+    "language": "Markdown"
+  },
+  "./website/modules/examples/NoMatch.js": {
+    "blank": 5,
+    "comment": 0,
+    "code": 53,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/Switch.md": {
+    "blank": 22,
+    "comment": 0,
+    "code": 53,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/android/app/build.gradle": {
+    "blank": 9,
+    "comment": 78,
+    "code": 52,
+    "language": "Gradle"
+  },
+  "./packages/react-router/docs/api/location.md": {
+    "blank": 17,
+    "comment": 0,
+    "code": 52,
+    "language": "Markdown"
+  },
+  "./packages/react-router/modules/Prompt.js": {
+    "blank": 12,
+    "comment": 4,
+    "code": 51,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/__tests__/reducer-test.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 51,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/guides/code-splitting.md": {
+    "blank": 12,
+    "comment": 0,
+    "code": 50,
+    "language": "Markdown"
+  },
+  "./website/modules/animated/AnimatedModulo.js": {
+    "blank": 11,
+    "comment": 10,
+    "code": 48,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/ios/ReactRouterNativeTests/ReactRouterNativeTests.m": {
+    "blank": 15,
+    "comment": 8,
+    "code": 47,
+    "language": "Objective C"
+  },
+  "./packages/react-router-native/package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 46,
+    "language": "JSON"
+  },
+  "./website/modules/animated/AnimatedTracking.js": {
+    "blank": 9,
+    "comment": 10,
+    "code": 45,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Footer.js": {
+    "blank": 7,
+    "comment": 0,
+    "code": 45,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/APISmall.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/Ambiguous.js": {
+    "blank": 5,
+    "comment": 12,
+    "code": 44,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/examples/Recursive.js": {
+    "blank": 7,
+    "comment": 0,
+    "code": 43,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/api/BrowserRouter.md": {
+    "blank": 18,
+    "comment": 0,
+    "code": 42,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/Base.lproj/LaunchScreen.xib": {
+    "blank": 0,
+    "comment": 0,
+    "code": 42,
+    "language": "XML"
+  },
+  "./packages/react-router-config/rollup.config.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 42,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/AnimatedTemplate.js": {
+    "blank": 8,
+    "comment": 10,
+    "code": 41,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/api/Link.md": {
+    "blank": 19,
+    "comment": 0,
+    "code": 40,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/Link.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 40,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/Params.js": {
+    "blank": 6,
+    "comment": 5,
+    "code": 40,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/matchPath.js": {
+    "blank": 15,
+    "comment": 3,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/ConnectedRouter.js": {
+    "blank": 10,
+    "comment": 0,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/Images.xcassets/AppIcon.appiconset/Contents.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 38,
+    "language": "JSON"
+  },
+  "./packages/react-router-native/docs/api/Link.md": {
+    "blank": 15,
+    "comment": 0,
+    "code": 38,
+    "language": "Markdown"
+  },
+  "./website/modules/components/Guide.js": {
+    "blank": 3,
+    "comment": 1,
+    "code": 38,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/SwitchMount-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 37,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/Ambiguous.js": {
+    "blank": 4,
+    "comment": 12,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "./website/index.html.ejs": {
+    "blank": 7,
+    "comment": 0,
+    "code": 36,
+    "language": "EJS"
+  },
+  "./packages/react-router-dom/rollup.config.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/Redirect-test.js": {
+    "blank": 4,
+    "comment": 0,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/CustomLink.js": {
+    "blank": 5,
+    "comment": 0,
+    "code": 36,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/DelegateMarkdownLinks.js": {
+    "blank": 5,
+    "comment": 1,
+    "code": 35,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/app/src/main/AndroidManifest.xml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 34,
+    "language": "XML"
+  },
+  "./packages/react-router-dom/modules/__tests__/BrowserRouter-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/__tests__/MemoryRouter-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/app/src/main/java/com/reactrouternative/MainApplication.java": {
+    "blank": 8,
+    "comment": 0,
+    "code": 34,
+    "language": "Java"
+  },
+  "./packages/react-router/docs/api/history.md": {
+    "blank": 11,
+    "comment": 0,
+    "code": 34,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/__tests__/HashRouter-test.js": {
+    "blank": 9,
+    "comment": 0,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Example.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 34,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/examples/BasicExample.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 33,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/tools/babel-preset.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 33,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/experimental/TabRoutes.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 33,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/targets/react-dom.js": {
+    "blank": 6,
+    "comment": 15,
+    "code": 33,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/docs/api/HashRouter.md": {
+    "blank": 17,
+    "comment": 0,
+    "code": 33,
+    "language": "Markdown"
+  },
+  "./packages/react-router/rollup.config.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/rollup.config.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/BackButton.js": {
+    "blank": 7,
+    "comment": 0,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/API.js": {
+    "blank": 3,
+    "comment": 2,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "./README.md": {
+    "blank": 13,
+    "comment": 0,
+    "code": 32,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/DeepLinking.js": {
+    "blank": 8,
+    "comment": 0,
+    "code": 32,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/Recursive.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/match.md": {
+    "blank": 13,
+    "comment": 0,
+    "code": 31,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/tools/build.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/tools/build.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./website/modules/examples/StaticRouter.js": {
+    "blank": 7,
+    "comment": 27,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/tools/build.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/Router.md": {
+    "blank": 13,
+    "comment": 0,
+    "code": 31,
+    "language": "Markdown"
+  },
+  "./packages/react-router-config/tools/build.js": {
+    "blank": 11,
+    "comment": 0,
+    "code": 31,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/app/proguard-rules.pro": {
+    "blank": 13,
+    "comment": 23,
+    "code": 30,
+    "language": "ProGuard"
+  },
+  "./website/modules/animated/AnimatedWithChildren.js": {
+    "blank": 7,
+    "comment": 10,
+    "code": 30,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/MemoryRouter.md": {
+    "blank": 15,
+    "comment": 0,
+    "code": 29,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/docs/api/NativeRouter.md": {
+    "blank": 13,
+    "comment": 0,
+    "code": 28,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/AppDelegate.m": {
+    "blank": 8,
+    "comment": 8,
+    "code": 28,
+    "language": "Objective C"
+  },
+  "./packages/react-router/docs/guides/redux.md": {
+    "blank": 16,
+    "comment": 0,
+    "code": 28,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/rn-cli.config.js": {
+    "blank": 7,
+    "comment": 1,
+    "code": 27,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/withRouter.js": {
+    "blank": 4,
+    "comment": 3,
+    "code": 27,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/MemoryRouter.js": {
+    "blank": 5,
+    "comment": 3,
+    "code": 26,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/BrowserRouter.js": {
+    "blank": 5,
+    "comment": 3,
+    "code": 26,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Bundle.js": {
+    "blank": 6,
+    "comment": 0,
+    "code": 26,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/api/Prompt.md": {
+    "blank": 12,
+    "comment": 0,
+    "code": 26,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/HashRouter.js": {
+    "blank": 5,
+    "comment": 3,
+    "code": 25,
+    "language": "JavaScript"
+  },
+  "./website/modules/docs/Core.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 25,
+    "language": "JavaScript"
+  },
+  "./website/static/safari-pinned-tab.svg": {
+    "blank": 0,
+    "comment": 0,
+    "code": 25,
+    "language": "SVG"
+  },
+  "./ISSUE_TEMPLATE.md": {
+    "blank": 10,
+    "comment": 0,
+    "code": 25,
+    "language": "Markdown"
+  },
+  "./packages/react-router-redux/modules/__tests__/middleware-test.js": {
+    "blank": 7,
+    "comment": 0,
+    "code": 24,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/Animation.js": {
+    "blank": 3,
+    "comment": 14,
+    "code": 24,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/README.md": {
+    "blank": 16,
+    "comment": 0,
+    "code": 24,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/ios/ReactRouterNativeTests/Info.plist": {
+    "blank": 0,
+    "comment": 0,
+    "code": 24,
+    "language": "XML"
+  },
+  "./packages/react-router/docs/api/matchPath.md": {
+    "blank": 8,
+    "comment": 0,
+    "code": 23,
+    "language": "Markdown"
+  },
+  "./website/modules/components/Home/Video.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/modules/generatePath.js": {
+    "blank": 8,
+    "comment": 3,
+    "code": 23,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/README.md": {
+    "blank": 14,
+    "comment": 0,
+    "code": 23,
+    "language": "Markdown"
+  },
+  "./website/modules/components/Logo.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 22,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/BackButton.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 21,
+    "language": "Markdown"
+  },
+  "./packages/react-router-config/modules/matchRoutes.js": {
+    "blank": 7,
+    "comment": 1,
+    "code": 21,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/NativeRouter.js": {
+    "blank": 4,
+    "comment": 4,
+    "code": 21,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/modules/renderRoutes.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 20,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/SourceViewer.js": {
+    "blank": 3,
+    "comment": 1,
+    "code": 20,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/tools/babel-preset.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 20,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/tools/babel-preset.js": {
+    "blank": 3,
+    "comment": 0,
+    "code": 20,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/App.js": {
+    "blank": 6,
+    "comment": 3,
+    "code": 19,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/selectors.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 19,
+    "language": "JavaScript"
+  },
+  "./package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 18,
+    "language": "JSON"
+  },
+  "./packages/react-router-native/README.md": {
+    "blank": 11,
+    "comment": 0,
+    "code": 18,
+    "language": "Markdown"
+  },
+  "./.travis.yml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 18,
+    "language": "YAML"
+  },
+  "./website/modules/utils/subscribeToMailingList.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 17,
+    "language": "JavaScript"
+  },
+  "./website/modules/ReactRouterDOMShim.js": {
+    "blank": 2,
+    "comment": 3,
+    "code": 17,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/build.gradle": {
+    "blank": 3,
+    "comment": 4,
+    "code": 17,
+    "language": "Gradle"
+  },
+  "./website/webpack/prismjs-loader.js": {
+    "blank": 8,
+    "comment": 28,
+    "code": 16,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/Animated.js": {
+    "blank": 2,
+    "comment": 12,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "./scripts/postinstall.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/index.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/injectable/ApplyAnimatedValues.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/MarkdownViewer.js": {
+    "blank": 3,
+    "comment": 1,
+    "code": 14,
+    "language": "JavaScript"
+  },
+  "./website/static/manifest.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 14,
+    "language": "JSON"
+  },
+  "./packages/react-router-redux/modules/actions.js": {
+    "blank": 3,
+    "comment": 10,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/index.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Loading.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/SetPolyfill.js": {
+    "blank": 5,
+    "comment": 8,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/main.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 12,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/reducer.js": {
+    "blank": 4,
+    "comment": 10,
+    "code": 12,
+    "language": "JavaScript"
+  },
+  "./website/modules/components/Home/index.js": {
+    "blank": 1,
+    "comment": 0,
+    "code": 12,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/injectable/InteractionManager.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 11,
+    "language": "JavaScript"
+  },
+  "./scripts/build.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "JavaScript"
+  },
+  "./packages/react-router/docs/guides/quick-start.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 11,
+    "language": "Markdown"
+  },
+  "./packages/react-router/modules/index.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/modules/middleware.js": {
+    "blank": 2,
+    "comment": 5,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-redux/tools/es2015-preset.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "./website/modules/LoadServiceWorker.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 10,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/targets/react-native.js": {
+    "blank": 3,
+    "comment": 12,
+    "code": 9,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/__tests__/index.ios.js": {
+    "blank": 2,
+    "comment": 1,
+    "code": 9,
+    "language": "JavaScript"
+  },
+  "./website/static/browserconfig.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9,
+    "language": "XML"
+  },
+  "./packages/react-router-native/__tests__/index.android.js": {
+    "blank": 2,
+    "comment": 1,
+    "code": 9,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/injectable/RequestAnimationFrame.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/injectable/CancelAnimationFrame.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/app/src/main/java/com/reactrouternative/MainActivity.java": {
+    "blank": 3,
+    "comment": 4,
+    "code": 8,
+    "language": "Java"
+  },
+  "./website/modules/animated/injectable/FlattenStyle.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 8,
+    "language": "JavaScript"
+  },
+  "./lerna.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "JSON"
+  },
+  "./website/modules/components/SmallScreen.js": {
+    "blank": 2,
+    "comment": 0,
+    "code": 7,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/main.m": {
+    "blank": 3,
+    "comment": 8,
+    "code": 7,
+    "language": "Objective C"
+  },
+  "./website/modules/animated/isAnimated.js": {
+    "blank": 3,
+    "comment": 10,
+    "code": 6,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/DeepLinking.md": {
+    "blank": 3,
+    "comment": 0,
+    "code": 6,
+    "language": "Markdown"
+  },
+  "./website/modules/index.js": {
+    "blank": 1,
+    "comment": 1,
+    "code": 6,
+    "language": "JavaScript"
+  },
+  "./website/modules/animated/guid.js": {
+    "blank": 2,
+    "comment": 10,
+    "code": 5,
+    "language": "JavaScript"
+  },
+  "./website/modules/Theme.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/android/app/src/main/res/values/styles.xml": {
+    "blank": 2,
+    "comment": 2,
+    "code": 4,
+    "language": "XML"
+  },
+  "./packages/react-router/docs/guides/static-routes.md": {
+    "blank": 3,
+    "comment": 0,
+    "code": 4,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/index.ios.js": {
+    "blank": 3,
+    "comment": 1,
+    "code": 4,
+    "language": "JavaScript"
+  },
+  "./.github/lock.yml": {
+    "blank": 7,
+    "comment": 14,
+    "code": 4,
+    "language": "YAML"
+  },
+  "./packages/react-router-native/ios/ReactRouterNative/AppDelegate.h": {
+    "blank": 4,
+    "comment": 8,
+    "code": 4,
+    "language": "C/C++ Header"
+  },
+  "./packages/react-router-native/docs/guides/deep-linking.md": {
+    "blank": 3,
+    "comment": 0,
+    "code": 3,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/android/app/src/main/res/values/strings.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 3,
+    "language": "XML"
+  },
+  "./packages/react-router/docs/api/context.router.md": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/Prompt.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/Redirect.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/docs/api/withRouter.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/docs/api/MemoryRouter.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/android/settings.gradle": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Gradle"
+  },
+  "./packages/react-router-dom/modules/Redirect.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/matchPath.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-native/docs/api/StaticRouter.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/generatePath.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/matchPath.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/Router.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/Prompt.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/Route.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/withRouter.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-config/modules/index.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/Route.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/StaticRouter.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/Switch.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "./packages/react-router-dom/modules/Switch.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-dom/modules/MemoryRouter.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 2,
+    "language": "JavaScript"
+  },
+  "./packages/react-router-native/docs/api/Router.md": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Markdown"
+  },
+  "SUM": {
+    "blank": 3040,
+    "comment": 1273,
+    "code": 75343,
+    "nFiles": 279
+  }
+}

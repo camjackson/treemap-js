@@ -67,7 +67,7 @@ export class TreeNode {
   }
 }
 
-const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
+export const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
   const result: TreeNode = TreeNode.newDirectory('.', null);
 
   rawData.forEach(result.addFile);
@@ -75,4 +75,20 @@ const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
   return result.sortRecursive();
 };
 
-export default buildTreeData;
+const excludes = [/^header$/, /^SUM$/, /package-lock.json/];
+export const buildTreeDataFromClocData = (data: any): TreeNode => {
+  // Generate with e.g. `cloc --exclude-dir node_modules --by-file --json .`
+  const fileNames = Object.keys(data).filter((name: string) => {
+    return excludes.reduce(
+      (okSoFar: boolean, exclude) => okSoFar && !name.match(exclude),
+      true,
+    );
+  });
+
+  const inputFiles: InputFileWithSize[] = fileNames.map(name => ({
+    fullPath: name.replace(/^.\//, ''),
+    size: data[name].code,
+  }));
+
+  return buildTreeData(inputFiles);
+};

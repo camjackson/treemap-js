@@ -1,4 +1,4 @@
-import buildTreeData, { InputFileWithSize, TreeNode } from '../buildTreeData';
+import { buildTreeData, InputFileWithSize, TreeNode } from '../buildTreeData';
 
 describe('thing', () => {
   const inputFiles: InputFileWithSize[] = [
