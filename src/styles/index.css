@@ -17,3 +17,9 @@ body,
 .stroke-black {
   stroke: black;
 }
+
+@variants hover {
+  .stroke-width-3 {
+    stroke-width: 3;
+  }
+}

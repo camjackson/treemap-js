@@ -1,10 +1,6 @@
 import React, { FC } from 'react';
 import { TreeNode } from './buildTreeData';
-
-enum Direction {
-  HORIZONTAL,
-  VERTICAL,
-}
+import layoutRects, { Rect } from './layerOuterer';
 
 type Props = {
   x: number;
@@ -28,18 +24,18 @@ const colourClasses = [
   'text-pink-400 hover:text-pink-600',
 ];
 
-const pickDirection = (width: number, height: number) =>
-  width > height ? Direction.HORIZONTAL : Direction.VERTICAL;
-
 const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
   const colour = colourClasses[depth % colourClasses.length];
-  const direction = pickDirection(width, height);
 
-  const widthForAllChildren = width - 2 * paddingX;
-  const heightForAllChildren = height - 2 * paddingY;
-
-  let nextChildLocation =
-    direction === Direction.HORIZONTAL ? x + paddingX : y + paddingY;
+  const childSizes = (treeData.children || []).map(child => child.size);
+  const childRects = layoutRects(
+    width,
+    height,
+    treeData.size,
+    childSizes,
+    paddingX,
+    paddingY,
+  );
 
   return (
     <>
@@ -51,37 +47,19 @@ const Treemap: FC<Props> = ({ x, y, width, height, treeData, depth }) => {
         fill="none"
         className={`stroke-black fill-current ${colour}`}
       />
-      <text text-anchor="middle" x={x + width / 2} y={y + textHeight + 3}>
+      <text textAnchor="middle" x={x + width / 2} y={y + textHeight + 3}>
         {treeData.name}
       </text>
       {treeData.children &&
         treeData.children.map((child, index) => {
-          const childProportion = child.size / treeData.size;
-          let childX: number,
-            childY: number,
-            childWidth: number,
-            childHeight: number;
-          if (direction === Direction.HORIZONTAL) {
-            childX = nextChildLocation;
-            childY = y + paddingY;
-            childWidth = childProportion * widthForAllChildren;
-            childHeight = heightForAllChildren;
-            nextChildLocation += childWidth;
-          } else {
-            childX = x + paddingX;
-            childY = nextChildLocation;
-            childWidth = widthForAllChildren;
-            childHeight = childProportion * heightForAllChildren;
-            nextChildLocation += childHeight;
-          }
-
+          const rect: Rect = childRects[index];
           return (
             <Treemap
               key={index}
-              x={childX}
-              y={childY}
-              width={childWidth}
-              height={childHeight}
+              x={x + rect.x}
+              y={y + rect.y}
+              width={rect.width}
+              height={rect.height}
               treeData={child}
               depth={depth + 1}
             />
