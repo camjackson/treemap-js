@@ -1,4 +1,4 @@
-import layoutRects, { getNumberOfRows } from '../layerOuterer';
+import layoutRects from '../layerOuterer';
 
 describe('layerOuterer', () => {
   const width = 1000;
@@ -6,18 +6,7 @@ describe('layerOuterer', () => {
   const paddingX = 10;
   const paddingY = 20;
   const doLayout = (sizes: number[], totalSize = 100) =>
-    layoutRects(width, height, totalSize, sizes, paddingX, paddingY);
-
-  describe('getNumberOfRows', () => {
-    it('gives a square-ish layout', () => {
-      expect(getNumberOfRows(1)).toEqual(1);
-      expect(getNumberOfRows(4)).toEqual(2);
-      expect(getNumberOfRows(5)).toEqual(2);
-      expect(getNumberOfRows(9)).toEqual(3);
-      expect(getNumberOfRows(15)).toEqual(3);
-      expect(getNumberOfRows(99)).toEqual(9);
-    });
-  });
+    layoutRects(width, height, totalSize, sizes, paddingX, paddingY, 2.5);
 
   describe('layoutRects', () => {
     it('allocates the whole space, with padding, when just one child', () => {
