@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useRef, useState, useLayoutEffect } from 'react';
 import { TreeNode } from './buildTreeData';
 import layoutRects, { Rect } from './layerOuterer';
 
@@ -36,6 +36,13 @@ const Treemap: FC<Props> = ({
   isCurrentRoot,
   drillTo,
 }) => {
+  const textRef = useRef(null);
+  const [showText, setShowText] = useState(true);
+  useLayoutEffect(() => {
+    const textWidth = textRef.current.getBoundingClientRect().width;
+    setShowText(height > 19 && width > textWidth);
+  }, [width, height, textRef]);
+
   const colour = colourClasses[depth % colourClasses.length];
 
   const childSizes = (treeData.children || []).map(child => child.size);
@@ -62,7 +69,13 @@ const Treemap: FC<Props> = ({
         className={`stroke-black fill-current cursor-pointer ${colour}`}
         onClick={isCurrentRoot ? drillUp : drillDown}
       />
-      <text textAnchor="middle" x={x + width / 2} y={y + textHeight + 3}>
+      <text
+        ref={textRef}
+        textAnchor="middle"
+        x={x + width / 2}
+        y={y + textHeight + 3}
+        className={showText ? 'visible' : 'invisible'}
+      >
         {treeData.name}
       </text>
       {treeData.children &&
