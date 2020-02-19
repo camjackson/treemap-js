@@ -5,51 +5,51 @@ export type Rect = {
   height: number;
 };
 
-type RectSingleDimension = {
-  rectStart: number;
-  rectSize: number;
+type OneDElement = {
+  start: number;
+  length: number;
 };
-const calculateRectScales = (
-  spaceToTakeUp: number, // width or height
-  totalSize: number,
-  sizes: number[],
-  overallStart: number, // startX or startY
-): RectSingleDimension[] => {
-  let sizeSoFar = overallStart;
-  return sizes.map((size: number) => {
-    const rectStart = sizeSoFar;
-    const rectSize = spaceToTakeUp * (size / totalSize);
-    sizeSoFar += rectSize;
+const layOutOneDimension = (
+  spaceToFill: number,
+  values: number[],
+  sumOfValues: number,
+  offset: number,
+): OneDElement[] => {
+  let spaceTakenSoFar = offset;
+  return values.map((value: number) => {
+    const start = spaceTakenSoFar;
+    const length = (value / sumOfValues) * spaceToFill;
+    spaceTakenSoFar += length;
 
-    return { rectStart, rectSize };
+    return { start, length };
   });
 };
 
-const layoutSingleColumn = (
-  width: number,
+const layOutItemsInColumn = (
+  columnWidth: number,
   startX: number,
-  rectScales: RectSingleDimension[],
+  items: OneDElement[],
 ): Rect[] => {
-  return rectScales.map((rectScale: RectSingleDimension) => {
+  return items.map((item: OneDElement) => {
     return {
       x: startX,
-      y: rectScale.rectStart,
-      width,
-      height: rectScale.rectSize,
+      y: item.start,
+      width: columnWidth,
+      height: item.length,
     };
   });
 };
 
-const layoutSingleRow = (
-  height: number,
+const layOutItemsInRow = (
+  rowHeight: number,
   startY: number,
-  rectScales: RectSingleDimension[],
+  items: OneDElement[],
 ): Rect[] => {
-  return rectScales.map((rectScale: RectSingleDimension) => ({
-    x: rectScale.rectStart,
+  return items.map((item: OneDElement) => ({
+    x: item.start,
     y: startY,
-    width: rectScale.rectSize,
-    height,
+    width: item.length,
+    height: rowHeight,
   }));
 };
 
@@ -78,26 +78,29 @@ const layoutRowsOrColumns = (
   crossAxisOffset: number,
   mainAxisSpaceForEachGroup: number,
   crossAxisSpaceForAllGroups: number,
-  childLayoutFn: (_, __, ___) => Rect[],
-) => {
+  itemsToRowOrColumn: (_: number, __: number, ___: OneDElement[]) => Rect[],
+): Rect[] => {
   const numberOfRowsOrCols = Math.floor(Math.sqrt(childSizes.length));
   const groupedSizes = groupSizes(childSizes, totalSize / numberOfRowsOrCols);
 
-  let crossAxisLocation = crossAxisOffset;
-  return groupedSizes
-    .map((groupOfSizes: number[]) => {
-      const groupSize = sum(groupOfSizes);
-      const scaledSize = crossAxisSpaceForAllGroups * (groupSize / totalSize);
-      const groupLocation = crossAxisLocation;
-      crossAxisLocation += scaledSize;
+  const sumOfEachGroup = groupedSizes.map((group: number[]) => sum(group));
 
-      const rectScales = calculateRectScales(
+  // Cross-axis sizes
+  return layOutOneDimension(
+    crossAxisSpaceForAllGroups,
+    sumOfEachGroup,
+    totalSize,
+    crossAxisOffset,
+  )
+    .map((outerItem: OneDElement, index: number) => {
+      // Main axis sizes
+      const innerItems = layOutOneDimension(
         mainAxisSpaceForEachGroup,
-        groupSize,
-        groupOfSizes,
+        groupedSizes[index],
+        sumOfEachGroup[index],
         mainAxisOffset,
       );
-      return childLayoutFn(scaledSize, groupLocation, rectScales);
+      return itemsToRowOrColumn(outerItem.length, outerItem.start, innerItems);
     })
     .flat();
 };
@@ -123,7 +126,7 @@ const layoutRects = (
       paddingX,
       availableHeight,
       availableWidth,
-      layoutSingleColumn,
+      layOutItemsInColumn,
     );
   } else {
     // lay out in rows: main axis is X, cross axis is Y
@@ -134,7 +137,7 @@ const layoutRects = (
       paddingY,
       availableWidth,
       availableHeight,
-      layoutSingleRow,
+      layOutItemsInRow,
     );
   }
 };
