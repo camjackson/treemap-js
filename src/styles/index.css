@@ -27,9 +27,3 @@ body,
 .cursor-help {
   cursor: help;
 }
-
-@media (max-width: 1120px) {
-  .hide-on-small {
-    display: none;
-  }
-}

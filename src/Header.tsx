@@ -15,8 +15,8 @@ const Header: FC<Props> = ({ selectNode }) => {
 
   return (
     <header className="">
-      <h1 className="text-center text-3xl">Treemap (of react-router.git)</h1>
-      <label className="fixed top-0 left-0 my-4 ml-4 hide-on-small">
+      <h1 className="text-center text-3xl">Treemap (react-router)</h1>
+      <label className="fixed top-0 left-0 my-4 ml-4 hidden lg:inline">
         <span
           className="mr-3 underline cursor-help"
           title="Generate with e.g. `cloc --exclude-dir node_modules --by-file --json . > cloc.json`"
