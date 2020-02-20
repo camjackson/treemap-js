@@ -19,6 +19,13 @@ export class TreeNode {
     return new TreeNode(name, 0, [], parent);
   }
 
+  public getFullPath = () => {
+    if (!this.parent) {
+      return this.name;
+    }
+    return `${this.parent.getFullPath()}/${this.name}`;
+  };
+
   public addFile = (inputFile: InputFileWithSize) => {
     this.size += inputFile.size;
     const [firstPathSegment, ...otherPathSegments] = inputFile.fullPath.split(

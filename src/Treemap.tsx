@@ -76,7 +76,7 @@ const Treemap: FC<Props> = ({
         y={y + textHeight + 3}
         className={showText ? 'visible' : 'invisible'}
       >
-        {treeData.name}
+        {isCurrentRoot ? treeData.getFullPath() : treeData.name}
       </text>
       {treeData.children &&
         treeData.children.map((child, index) => {
