@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
+import Header from './Header';
 import Treemap from './Treemap';
 import {
   buildTreeData,
@@ -28,14 +29,15 @@ function App() {
 
   const [currentRootNode, setCurrentRootNode] = useState(examples.reactRouter);
   const [currentDepth, setCurrentDepth] = useState(0);
-  const drillTo = (node: TreeNode, depth: number) => () => {
+  const selectNode = (node: TreeNode, depth: number) => () => {
     setCurrentRootNode(node);
     setCurrentDepth(depth);
   };
 
   return (
     <div className="w-full h-full flex flex-col">
-      <h1 className="text-center text-3xl">Treemap (of react-router.git)</h1>
+      <Header selectNode={selectNode} />
+
       <main className="flex-1 p-2">
         <svg
           ref={svgRef}
@@ -50,7 +52,7 @@ function App() {
             treeData={currentRootNode}
             depth={currentDepth}
             isCurrentRoot
-            drillTo={drillTo}
+            drillTo={selectNode}
           />
         </svg>
       </main>
