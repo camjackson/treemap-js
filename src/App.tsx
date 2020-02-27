@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import Header from './Header';
 import Treemap from './Treemap';
+import Menu from './Menu';
 import {
   buildTreeData,
   buildTreeDataFromClocData,
@@ -34,11 +35,16 @@ function App() {
     setCurrentDepth(depth);
   };
 
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => setShowMenu(!showMenu);
+
   return (
     <div className="w-full h-full flex flex-col">
-      <Header selectNode={selectNode} />
+      <Header toggleMenu={toggleMenu} />
 
-      <main className="flex-1 p-2">
+      {showMenu && <Menu selectNode={selectNode} toggleMenu={toggleMenu} />}
+
+      <main className="flex-1 p-2 pt-0">
         <svg
           ref={svgRef}
           xmlns="http://www.w3.org/2000/svg"

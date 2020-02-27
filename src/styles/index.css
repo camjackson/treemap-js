@@ -24,6 +24,6 @@ body,
   }
 }
 
-.cursor-help {
-  cursor: help;
+.bg-fade {
+  background-color: #9b9b9bc9;
 }
