@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import Cross from './icons/Cross';
-import { buildTreeDataFromClocData, TreeNode } from './buildTreeData';
+import { buildTreeDataFromClocData, ClocMap, TreeNode } from './buildTreeData';
 
 type Props = {
-  selectNode: (treeData: TreeNode, depth: number) => () => void;
+  showMenu: boolean;
+  uploadFile: (parsedData: ClocMap) => void;
   toggleMenu: () => void;
 };
 
@@ -14,14 +15,16 @@ const Li = (props: any) => (
   />
 );
 
-const Menu: FC<Props> = ({ selectNode, toggleMenu }) => {
-  const onChange = (e: any) => {
+const Menu: FC<Props> = ({ showMenu, uploadFile, toggleMenu }) => {
+  const onFileChange = (e: any) => {
     e.target.files[0].text().then((text: string) => {
-      const parsedData = buildTreeDataFromClocData(JSON.parse(text));
-      selectNode(parsedData, 0)();
+      uploadFile(JSON.parse(text));
       toggleMenu();
     });
   };
+
+  if (!showMenu) return null;
+
   return (
     <>
       <div className="fixed top-0 right-0 bottom-0 left-0 bg-fade" />
@@ -44,7 +47,7 @@ const Menu: FC<Props> = ({ selectNode, toggleMenu }) => {
                 type="file"
                 multiple={false}
                 accept="application/json"
-                onChange={onChange}
+                onChange={onFileChange}
               />
             </label>
           </Li>

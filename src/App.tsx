@@ -5,6 +5,7 @@ import Menu from './Menu';
 import {
   buildTreeData,
   buildTreeDataFromClocData,
+  ClocMap,
   TreeNode,
 } from './buildTreeData';
 import mortgageData from './exampleData/mortgage';
@@ -12,8 +13,12 @@ import reactRouterClocData from './exampleData/react-router-cloc.json';
 
 const examples = {
   mortgage: buildTreeData(mortgageData),
-  reactRouter: buildTreeDataFromClocData(reactRouterClocData),
+  reactRouter: buildTreeDataFromClocData(
+    (reactRouterClocData as any) as ClocMap,
+  ),
 };
+
+type TreeNodeStateHook = [TreeNode, (newValue: TreeNode) => void];
 
 function App() {
   const svgRef = useRef(null);
@@ -28,11 +33,18 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   }, [svgRef]);
 
-  const [currentRootNode, setCurrentRootNode] = useState(examples.reactRouter);
+  const [currentRootNode, setCurrentRootNode]: TreeNodeStateHook = useState(
+    examples.mortgage,
+  );
   const [currentDepth, setCurrentDepth] = useState(0);
   const selectNode = (node: TreeNode, depth: number) => () => {
     setCurrentRootNode(node);
     setCurrentDepth(depth);
+  };
+
+  const uploadFile = (parsedData: ClocMap) => {
+    const treeData: TreeNode = buildTreeDataFromClocData(parsedData);
+    selectNode(treeData, 0)();
   };
 
   const [showMenu, setShowMenu] = useState(false);
@@ -41,8 +53,11 @@ function App() {
   return (
     <div className="w-full h-full flex flex-col">
       <Header toggleMenu={toggleMenu} />
-
-      {showMenu && <Menu selectNode={selectNode} toggleMenu={toggleMenu} />}
+      <Menu
+        showMenu={showMenu}
+        uploadFile={uploadFile}
+        toggleMenu={toggleMenu}
+      />
 
       <main className="flex-1 p-2 pt-0">
         <svg

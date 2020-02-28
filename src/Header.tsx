@@ -11,7 +11,7 @@ const Header: FC<Props> = ({ toggleMenu }) => {
       <button className="ml-2 text-gray-900" title="Menu" onClick={toggleMenu}>
         <Hamburger />
       </button>
-      <h1 className="text-3xl text-center flex-1">Treemap (react-router)</h1>
+      <h1 className="text-3xl text-center flex-1">Treemap.js</h1>
     </header>
   );
 };

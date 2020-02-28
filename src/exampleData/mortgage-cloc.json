@@ -1,0 +1,389 @@
+{
+  "header": {
+    "cloc_url": "github.com/AlDanial/cloc",
+    "cloc_version": "1.84",
+    "elapsed_seconds": 0.512305974960327,
+    "n_files": 62,
+    "n_lines": 49287,
+    "files_per_second": 121.021426706572,
+    "lines_per_second": 96206.1783562387
+  },
+  "./src/styles/output.css": {
+    "blank": 11281,
+    "comment": 216,
+    "code": 35008,
+    "language": "CSS"
+  },
+  "./src/scenario/graph/RepaymentsGraph.tsx": {
+    "blank": 14,
+    "comment": 1,
+    "code": 137,
+    "language": "TypeScript"
+  },
+  "./src/math/__tests__/calculateLoanPeriods.test.tsx": {
+    "blank": 20,
+    "comment": 0,
+    "code": 97,
+    "language": "TypeScript"
+  },
+  "./src/App.tsx": {
+    "blank": 10,
+    "comment": 0,
+    "code": 97,
+    "language": "TypeScript"
+  },
+  "./src/scenario/ScenarioInputs.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 92,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/RepaymentColumn.tsx": {
+    "blank": 10,
+    "comment": 16,
+    "code": 92,
+    "language": "TypeScript"
+  },
+  "./src/scenario/RepaymentsStats.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 80,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/__tests__/RepaymentsGraph.test.tsx": {
+    "blank": 12,
+    "comment": 0,
+    "code": 80,
+    "language": "TypeScript"
+  },
+  "./src/scenario/ScenarioPanel.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 78,
+    "language": "TypeScript"
+  },
+  "./src/math/__tests__/LoanPeriod.test.tsx": {
+    "blank": 17,
+    "comment": 0,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "./src/scenario/__tests__/ScenarioInputs.test.tsx": {
+    "blank": 18,
+    "comment": 0,
+    "code": 71,
+    "language": "TypeScript"
+  },
+  "./src/styles/index.css": {
+    "blank": 21,
+    "comment": 5,
+    "code": 66,
+    "language": "CSS"
+  },
+  "./src/__tests__/StateStorage.test.tsx": {
+    "blank": 12,
+    "comment": 0,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "./src/scenario/__tests__/RepaymentsStats.test.tsx": {
+    "blank": 8,
+    "comment": 0,
+    "code": 65,
+    "language": "TypeScript"
+  },
+  "./src/math/calculateLoanPeriods.tsx": {
+    "blank": 10,
+    "comment": 2,
+    "code": 62,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/GridLines.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 62,
+    "language": "TypeScript"
+  },
+  "./src/scenario/__tests__/ScenarioPanel.test.tsx": {
+    "blank": 9,
+    "comment": 0,
+    "code": 61,
+    "language": "TypeScript"
+  },
+  "./src/__tests__/App.test.tsx": {
+    "blank": 14,
+    "comment": 14,
+    "code": 60,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/HoverBox.tsx": {
+    "blank": 7,
+    "comment": 0,
+    "code": 55,
+    "language": "TypeScript"
+  },
+  "./src/header/HeaderMenu.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 53,
+    "language": "TypeScript"
+  },
+  "./package.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 51,
+    "language": "JSON"
+  },
+  "./src/math/LoanPeriod.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 50,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/__tests__/GridLines.test.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/__tests__/RepaymentColumn.test.tsx": {
+    "blank": 7,
+    "comment": 0,
+    "code": 49,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/__tests__/HoverBox.test.tsx": {
+    "blank": 7,
+    "comment": 1,
+    "code": 48,
+    "language": "TypeScript"
+  },
+  "./src/scenario/ScenarioFieldSelector.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 42,
+    "language": "TypeScript"
+  },
+  "./src/header/HeaderForm.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 40,
+    "language": "TypeScript"
+  },
+  "./src/form/Inputs.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 38,
+    "language": "TypeScript"
+  },
+  "./src/StateStorage.ts": {
+    "blank": 6,
+    "comment": 0,
+    "code": 34,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/OffsetTrendLineSegment.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 33,
+    "language": "TypeScript"
+  },
+  "./src/__tests__/formatting.test.tsx": {
+    "blank": 4,
+    "comment": 1,
+    "code": 32,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/__tests__/getGridLineInterval.test.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 29,
+    "language": "TypeScript"
+  },
+  "./src/icons/CrossInSquare.tsx": {
+    "blank": 4,
+    "comment": 0,
+    "code": 28,
+    "language": "TypeScript"
+  },
+  "./src/setupTests.ts": {
+    "blank": 8,
+    "comment": 1,
+    "code": 27,
+    "language": "TypeScript"
+  },
+  "./src/icons/PlusInCircle.tsx": {
+    "blank": 4,
+    "comment": 0,
+    "code": 27,
+    "language": "TypeScript"
+  },
+  "./src/icons/Hamburger.tsx": {
+    "blank": 5,
+    "comment": 0,
+    "code": 26,
+    "language": "TypeScript"
+  },
+  "./src/form/__tests__/Inputs.test.tsx": {
+    "blank": 2,
+    "comment": 0,
+    "code": 25,
+    "language": "TypeScript"
+  },
+  "./src/scenario/graph/getGridLineInterval.tsx": {
+    "blank": 6,
+    "comment": 0,
+    "code": 24,
+    "language": "TypeScript"
+  },
+  "./src/scenario/ScenarioHeader.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 23,
+    "language": "TypeScript"
+  },
+  "./build/precache-manifest.d21a50387d3f6ff07c902e635a208c39.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 22,
+    "language": "JavaScript"
+  },
+  "./tsconfig.json": {
+    "blank": 1,
+    "comment": 0,
+    "code": 21,
+    "language": "JSON"
+  },
+  "./src/models.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 21,
+    "language": "TypeScript"
+  },
+  "./src/formatting.tsx": {
+    "blank": 4,
+    "comment": 0,
+    "code": 19,
+    "language": "TypeScript"
+  },
+  "./src/icons/CrossInCircle.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 18,
+    "language": "TypeScript"
+  },
+  "./src/modals/Modal.tsx": {
+    "blank": 4,
+    "comment": 1,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "./src/header/Header.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 16,
+    "language": "TypeScript"
+  },
+  "./build/service-worker.js": {
+    "blank": 7,
+    "comment": 17,
+    "code": 15,
+    "language": "JavaScript"
+  },
+  "./build/asset-manifest.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 15,
+    "language": "JSON"
+  },
+  "./src/AddScenarioButton.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 15,
+    "language": "TypeScript"
+  },
+  "./tailwind.config.js": {
+    "blank": 1,
+    "comment": 2,
+    "code": 13,
+    "language": "JavaScript"
+  },
+  "./public/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 12,
+    "language": "HTML"
+  },
+  "./src/scenario/Table.tsx": {
+    "blank": 3,
+    "comment": 0,
+    "code": 12,
+    "language": "TypeScript"
+  },
+  "./README.md": {
+    "blank": 8,
+    "comment": 0,
+    "code": 12,
+    "language": "Markdown"
+  },
+  "./postcss.config.js": {
+    "blank": 2,
+    "comment": 1,
+    "code": 11,
+    "language": "JavaScript"
+  },
+  "./src/math/calculateRepayment.ts": {
+    "blank": 2,
+    "comment": 0,
+    "code": 7,
+    "language": "TypeScript"
+  },
+  "./src/index.tsx": {
+    "blank": 1,
+    "comment": 0,
+    "code": 5,
+    "language": "TypeScript"
+  },
+  "./build/static/css/main.c5753ebb.chunk.css": {
+    "blank": 0,
+    "comment": 1,
+    "code": 1,
+    "language": "CSS"
+  },
+  "./build/static/js/runtime~main.a8a9905a.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 1,
+    "language": "JavaScript"
+  },
+  "./build/static/js/2.f6b45fde.chunk.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 1,
+    "language": "JavaScript"
+  },
+  "./build/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "HTML"
+  },
+  "./build/static/js/main.622f32ee.chunk.js": {
+    "blank": 0,
+    "comment": 1,
+    "code": 1,
+    "language": "JavaScript"
+  },
+  "./src/react-app-env.d.ts": {
+    "blank": 0,
+    "comment": 1,
+    "code": 0,
+    "language": "TypeScript"
+  },
+  "SUM": {
+    "blank": 11622,
+    "comment": 283,
+    "code": 37382,
+    "nFiles": 62
+  }
+}

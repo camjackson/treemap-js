@@ -82,8 +82,16 @@ export const buildTreeData = (rawData: InputFileWithSize[]): TreeNode => {
   return result.sortRecursive();
 };
 
+type ClocEntry = {
+  blank: number;
+  comment: number;
+  code: number;
+  language: string;
+};
+export type ClocMap = Record<string, ClocEntry>;
+
 const excludes = [/^header$/, /^SUM$/, /package-lock.json/];
-export const buildTreeDataFromClocData = (data: any): TreeNode => {
+export const buildTreeDataFromClocData = (data: ClocMap): TreeNode => {
   // Generate with e.g. `cloc --exclude-dir node_modules --by-file --json .`
   const fileNames = Object.keys(data).filter((name: string) => {
     return excludes.reduce(
