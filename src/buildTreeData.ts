@@ -90,11 +90,15 @@ type ClocEntry = {
 };
 export type ClocMap = Record<string, ClocEntry>;
 
-const excludes = [/^header$/, /^SUM$/, /package-lock.json/];
-export const buildTreeDataFromClocData = (data: ClocMap): TreeNode => {
-  // Generate with e.g. `cloc --exclude-dir node_modules --by-file --json .`
+const excludes = [/^header$/, /^SUM$/];
+export const buildTreeDataFromClocData = (
+  data: ClocMap,
+  userFilter: string,
+): TreeNode => {
+  const allExcludes =
+    userFilter === '' ? excludes : excludes.concat(new RegExp(userFilter));
   const fileNames = Object.keys(data).filter((name: string) => {
-    return excludes.reduce(
+    return allExcludes.reduce(
       (okSoFar: boolean, exclude) => okSoFar && !name.match(exclude),
       true,
     );

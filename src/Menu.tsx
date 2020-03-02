@@ -5,6 +5,8 @@ import { buildTreeDataFromClocData, ClocMap, TreeNode } from './buildTreeData';
 type Props = {
   showMenu: boolean;
   uploadFile: (parsedData: ClocMap) => void;
+  initialFilter: string;
+  setFilter: (filter: string) => void;
   toggleMenu: () => void;
 };
 
@@ -15,7 +17,13 @@ const Li = (props: any) => (
   />
 );
 
-const Menu: FC<Props> = ({ showMenu, uploadFile, toggleMenu }) => {
+const Menu: FC<Props> = ({
+  showMenu,
+  uploadFile,
+  initialFilter,
+  setFilter,
+  toggleMenu,
+}) => {
   const onFileChange = (e: any) => {
     e.target.files[0].text().then((text: string) => {
       uploadFile(JSON.parse(text));
@@ -23,12 +31,20 @@ const Menu: FC<Props> = ({ showMenu, uploadFile, toggleMenu }) => {
     });
   };
 
-  if (!showMenu) return null;
+  const onFilterBlur = (e: any) => {
+    setFilter(e.target.value);
+  };
+
+  const display = showMenu ? 'block' : 'hidden';
 
   return (
     <>
-      <div className="fixed top-0 right-0 bottom-0 left-0 bg-fade" />
-      <div className="fixed top-0 bottom-0 left-0 shadow-2xl bg-white border-r border-gray-300">
+      <div
+        className={`${display} fixed top-0 right-0 bottom-0 left-0 bg-fade`}
+      />
+      <div
+        className={`${display} fixed top-0 bottom-0 left-0 shadow-2xl bg-white border-r border-gray-300`}
+      >
         <header className="flex justify-between border-b border-gray-300">
           <h2 className="text-xl m-4">Options</h2>
           <button className="mr-2" title="Close" onClick={toggleMenu}>
@@ -50,6 +66,18 @@ const Menu: FC<Props> = ({ showMenu, uploadFile, toggleMenu }) => {
                 onChange={onFileChange}
               />
             </label>
+          </Li>
+          <Li>
+            <label>
+              File filter regex:
+              <input
+                className="mx-3 px-2 border border-gray-400"
+                type="text"
+                defaultValue={initialFilter}
+                onBlur={onFilterBlur}
+              />
+            </label>
+            <span className="italic">(Separate multiple filters with |)</span>
           </Li>
         </ul>
       </div>
