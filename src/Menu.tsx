@@ -1,13 +1,12 @@
-import React, { FC } from 'react';
+import React, { FC, Dispatch } from 'react';
 import Cross from './icons/Cross';
-import { buildTreeDataFromClocData, ClocMap, TreeNode } from './buildTreeData';
+import { Action } from './state';
 
 type Props = {
   showMenu: boolean;
-  uploadFile: (parsedData: ClocMap) => void;
   initialFilter: string;
-  setFilter: (filter: string) => void;
   toggleMenu: () => void;
+  dispatch: Dispatch<Action>;
 };
 
 const Li = (props: any) => (
@@ -17,22 +16,16 @@ const Li = (props: any) => (
   />
 );
 
-const Menu: FC<Props> = ({
-  showMenu,
-  uploadFile,
-  initialFilter,
-  setFilter,
-  toggleMenu,
-}) => {
+const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
   const onFileChange = (e: any) => {
     e.target.files[0].text().then((text: string) => {
-      uploadFile(JSON.parse(text));
+      dispatch({ type: 'uploadFile', inputData: JSON.parse(text) });
       toggleMenu();
     });
   };
 
   const onFilterBlur = (e: any) => {
-    setFilter(e.target.value);
+    dispatch({ type: 'setFilter', filter: e.target.value });
   };
 
   const display = showMenu ? 'block' : 'hidden';

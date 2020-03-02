@@ -1,4 +1,5 @@
-import React, { FC, useRef, useState, useLayoutEffect } from 'react';
+import React, { FC, useRef, useState, useLayoutEffect, Dispatch } from 'react';
+import { Action } from './state';
 import { TreeNode } from './buildTreeData';
 import layoutRects, { Rect } from './layerOuterer';
 
@@ -10,7 +11,7 @@ type Props = {
   treeData: TreeNode;
   depth: number;
   isCurrentRoot: boolean;
-  drillTo: (treeData: TreeNode, depth: number) => () => void;
+  dispatch: Dispatch<Action>;
 };
 
 const paddingX = 10;
@@ -34,7 +35,7 @@ const Treemap: FC<Props> = ({
   treeData,
   depth,
   isCurrentRoot,
-  drillTo,
+  dispatch,
 }) => {
   const textRef = useRef(null);
   const [showText, setShowText] = useState(true);
@@ -55,6 +56,8 @@ const Treemap: FC<Props> = ({
     paddingY,
   );
   const parent = treeData.parent;
+  const drillTo = (node: TreeNode, depth: number) => () =>
+    dispatch({ type: 'selectNode', node, depth });
   const drillDown = drillTo(treeData, depth);
   const drillUp = parent ? drillTo(parent, depth - 1) : () => {};
 
@@ -91,7 +94,7 @@ const Treemap: FC<Props> = ({
               treeData={child}
               depth={depth + 1}
               isCurrentRoot={false}
-              drillTo={drillTo}
+              dispatch={dispatch}
             />
           );
         })}

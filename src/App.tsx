@@ -1,22 +1,13 @@
-import React, { useRef, useLayoutEffect, useState } from 'react';
+import React, { useRef, useLayoutEffect, useState, useReducer } from 'react';
 import Header from './Header';
 import Treemap from './Treemap';
 import Menu from './Menu';
-import { buildTreeDataFromClocData, ClocMap, TreeNode } from './buildTreeData';
-import mortgageClocData from './exampleData/mortgage-cloc.json';
-import reactRouterClocData from './exampleData/react-router-cloc.json';
+import { reducer, initialState } from './state';
 
-const exampleInputs: Record<string, ClocMap> = {
-  mortgage: (mortgageClocData as any) as ClocMap,
-  reactRouter: (reactRouterClocData as any) as ClocMap,
-};
-const initialInput = exampleInputs.reactRouter;
-const initialFilter = 'package-lock.json';
+const App = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { filter, currentRootNode, currentDepth } = state;
 
-type ClocMapStateHook = [ClocMap, (newValue: ClocMap) => void];
-type TreeNodeStateHook = [TreeNode, (newValue: TreeNode) => void];
-
-function App() {
   const svgRef = useRef(null);
   const [svgDimensions, setSvgDimensions] = useState({ width: 1, height: 1 });
   useLayoutEffect(() => {
@@ -29,30 +20,6 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   }, [svgRef]);
 
-  const [filter, setFilter] = useState(initialFilter);
-  const [inputData, setInputData]: ClocMapStateHook = useState(initialInput);
-  const [currentRootNode, setCurrentRootNode]: TreeNodeStateHook = useState(
-    buildTreeDataFromClocData(inputData, filter),
-  );
-  const [currentDepth, setCurrentDepth] = useState(0);
-  const selectNode = (node: TreeNode, depth: number) => () => {
-    setCurrentRootNode(node);
-    setCurrentDepth(depth);
-  };
-
-  const setState = (newInputData: ClocMap, newFilter: string) => {
-    setInputData(newInputData);
-    setFilter(newFilter);
-    const treeData: TreeNode = buildTreeDataFromClocData(
-      newInputData,
-      newFilter,
-    );
-    selectNode(treeData, 0)();
-  };
-
-  const uploadFile = (parsedData: ClocMap) => setState(parsedData, filter);
-  const onChangeFilter = (newFilter: string) => setState(inputData, newFilter);
-
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
 
@@ -61,10 +28,9 @@ function App() {
       <Header toggleMenu={toggleMenu} />
       <Menu
         showMenu={showMenu}
-        uploadFile={uploadFile}
         initialFilter={filter}
-        setFilter={onChangeFilter}
         toggleMenu={toggleMenu}
+        dispatch={dispatch}
       />
 
       <main className="flex-1 p-2 pt-0">
@@ -81,12 +47,12 @@ function App() {
             treeData={currentRootNode}
             depth={currentDepth}
             isCurrentRoot
-            drillTo={selectNode}
+            dispatch={dispatch}
           />
         </svg>
       </main>
     </div>
   );
-}
+};
 
 export default App;
