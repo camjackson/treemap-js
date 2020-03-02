@@ -55,11 +55,10 @@ const Treemap: FC<Props> = ({
     paddingX,
     paddingY,
   );
-  const parent = treeData.parent;
   const drillTo = (node: TreeNode, depth: number) => () =>
     dispatch({ type: 'selectNode', node, depth });
   const drillDown = drillTo(treeData, depth);
-  const drillUp = parent ? drillTo(parent, depth - 1) : () => {};
+  const drillUp = drillTo(treeData.parent, Math.max(depth - 1, 0));
 
   return (
     <>

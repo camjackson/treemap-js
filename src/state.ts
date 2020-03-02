@@ -1,5 +1,5 @@
 import { Reducer } from 'react';
-import { buildTreeDataFromClocData, ClocMap, TreeNode } from './buildTreeData';
+import { ClocMap, TreeNode } from './buildTreeData';
 import mortgageClocData from './exampleData/mortgage-cloc.json';
 import reactRouterClocData from './exampleData/react-router-cloc.json';
 
@@ -24,10 +24,7 @@ export const reducer: Reducer<State, Action> = (
       return {
         filter: action.filter,
         inputData: state.inputData,
-        currentRootNode: buildTreeDataFromClocData(
-          state.inputData,
-          action.filter,
-        ),
+        currentRootNode: null,
         currentDepth: 0,
       };
     }
@@ -35,10 +32,7 @@ export const reducer: Reducer<State, Action> = (
       return {
         filter: state.filter,
         inputData: action.inputData,
-        currentRootNode: buildTreeDataFromClocData(
-          action.inputData,
-          state.filter,
-        ),
+        currentRootNode: null,
         currentDepth: 0,
       };
     }
@@ -62,6 +56,6 @@ const initialFilter = 'package-lock.json';
 export const initialState: State = {
   filter: initialFilter,
   inputData: initialInput,
-  currentRootNode: buildTreeDataFromClocData(initialInput, initialFilter),
+  currentRootNode: null,
   currentDepth: 0,
 };

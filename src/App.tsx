@@ -1,12 +1,23 @@
-import React, { useRef, useLayoutEffect, useState, useReducer } from 'react';
+import React, {
+  useRef,
+  useLayoutEffect,
+  useState,
+  useReducer,
+  useMemo,
+} from 'react';
 import Header from './Header';
 import Treemap from './Treemap';
 import Menu from './Menu';
 import { reducer, initialState } from './state';
+import { buildTreeDataFromClocData } from './buildTreeData';
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { filter, currentRootNode, currentDepth } = state;
+  const { filter, inputData, currentRootNode, currentDepth } = state;
+  const wholeTreeData = useMemo(
+    () => buildTreeDataFromClocData(inputData, filter),
+    [inputData, filter],
+  );
 
   const svgRef = useRef(null);
   const [svgDimensions, setSvgDimensions] = useState({ width: 1, height: 1 });
@@ -44,7 +55,7 @@ const App = () => {
             y={0}
             width={svgDimensions.width}
             height={svgDimensions.height}
-            treeData={currentRootNode}
+            treeData={currentRootNode || wholeTreeData}
             depth={currentDepth}
             isCurrentRoot
             dispatch={dispatch}
