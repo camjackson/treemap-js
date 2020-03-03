@@ -13,7 +13,7 @@ import { buildTreeDataFromClocData } from './buildTreeData';
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { filter, inputData, currentRootNode, currentDepth } = state;
+  const { name, filter, inputData, currentRootNode, currentDepth } = state;
   const wholeTreeData = useMemo(
     () => buildTreeDataFromClocData(inputData, filter),
     [inputData, filter],
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className="w-full h-full flex flex-col">
-      <Header toggleMenu={toggleMenu} />
+      <Header toggleMenu={toggleMenu} name={name} />
       <Menu
         showMenu={showMenu}
         initialFilter={filter}

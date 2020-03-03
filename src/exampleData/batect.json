@@ -1,0 +1,3407 @@
+{
+  "header": {
+    "cloc_url": "github.com/AlDanial/cloc",
+    "cloc_version": "1.84",
+    "elapsed_seconds": 3.12183213233948,
+    "n_files": 565,
+    "n_lines": 52170,
+    "files_per_second": 180.983466134226,
+    "lines_per_second": 16711.3405809249
+  },
+  "./app/src/unitTest/kotlin/batect/config/io/ConfigurationLoaderSpec.kt": {
+    "blank": 165,
+    "comment": 12,
+    "code": 1001,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerAPISpec.kt": {
+    "blank": 216,
+    "comment": 13,
+    "code": 965,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/ContainerDependencyGraphSpec.kt": {
+    "blank": 182,
+    "comment": 12,
+    "code": 699,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerAPI.kt": {
+    "blank": 181,
+    "comment": 20,
+    "code": 684,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerClientSpec.kt": {
+    "blank": 145,
+    "comment": 12,
+    "code": 682,
+    "language": "Kotlin"
+  },
+  "./.idea/workspace.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 641,
+    "language": "XML"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/TaskStepRunnerSpec.kt": {
+    "blank": 144,
+    "comment": 13,
+    "code": 598,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/TaskStateMachineSpec.kt": {
+    "blank": 162,
+    "comment": 13,
+    "code": 557,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/CleanupProgressDisplayLineSpec.kt": {
+    "blank": 134,
+    "comment": 12,
+    "code": 480,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/ContainerStartupProgressLineSpec.kt": {
+    "blank": 118,
+    "comment": 12,
+    "code": 479,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerContainerCreationRequestFactorySpec.kt": {
+    "blank": 105,
+    "comment": 12,
+    "code": 465,
+    "language": "Kotlin"
+  },
+  "./tools/schema/configSchema.json": {
+    "blank": 0,
+    "comment": 0,
+    "code": 410,
+    "language": "JSON"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/RunAsCurrentUserConfigurationProviderSpec.kt": {
+    "blank": 80,
+    "comment": 12,
+    "code": 396,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/windows/WindowsNativeMethods.kt": {
+    "blank": 109,
+    "comment": 19,
+    "code": 383,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/FailureErrorMessageFormatterSpec.kt": {
+    "blank": 55,
+    "comment": 12,
+    "code": 377,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/stages/CleanupStagePlannerSpec.kt": {
+    "blank": 47,
+    "comment": 12,
+    "code": 358,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/stages/RunStagePlannerSpec.kt": {
+    "blank": 30,
+    "comment": 12,
+    "code": 330,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/FancyEventLoggerSpec.kt": {
+    "blank": 72,
+    "comment": 12,
+    "code": 321,
+    "language": "Kotlin"
+  },
+  "./app/src/integrationTest/kotlin/batect/integrationtests/DockerClientIntegrationTest.kt": {
+    "blank": 60,
+    "comment": 13,
+    "code": 320,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryCredentialsConfigurationFileSpec.kt": {
+    "blank": 55,
+    "comment": 12,
+    "code": 314,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/UpgradeCommandSpec.kt": {
+    "blank": 64,
+    "comment": 12,
+    "code": 306,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/windows/WindowsNativeMethodsSpec.kt": {
+    "blank": 74,
+    "comment": 14,
+    "code": 303,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/ConsoleSpec.kt": {
+    "blank": 85,
+    "comment": 12,
+    "code": 294,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/proxies/ProxyEnvironmentVariablesProviderSpec.kt": {
+    "blank": 66,
+    "comment": 12,
+    "code": 290,
+    "language": "Kotlin"
+  },
+  "./docs/content/config/Containers.md": {
+    "blank": 116,
+    "comment": 0,
+    "code": 271,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/ParallelExecutionManagerSpec.kt": {
+    "blank": 79,
+    "comment": 12,
+    "code": 270,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/TaskExecutionOrderResolverSpec.kt": {
+    "blank": 68,
+    "comment": 12,
+    "code": 260,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerClient.kt": {
+    "blank": 64,
+    "comment": 18,
+    "code": 258,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/simple/SimpleEventLoggerSpec.kt": {
+    "blank": 51,
+    "comment": 12,
+    "code": 254,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/steps/TaskStepRunner.kt": {
+    "blank": 34,
+    "comment": 12,
+    "code": 242,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/RunTaskCommandSpec.kt": {
+    "blank": 50,
+    "comment": 12,
+    "code": 231,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/ContainerSpec.kt": {
+    "blank": 28,
+    "comment": 12,
+    "code": 229,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/InjectionConfiguration.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 227,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/VolumeMountSpec.kt": {
+    "blank": 51,
+    "comment": 12,
+    "code": 226,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryCredentialsSourceSpec.kt": {
+    "blank": 44,
+    "comment": 15,
+    "code": 224,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/Container.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 204,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/ContainerStartupProgressLine.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 187,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/CreateContainerStepRuleSpec.kt": {
+    "blank": 34,
+    "comment": 12,
+    "code": 180,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/text/TextRunSpec.kt": {
+    "blank": 60,
+    "comment": 12,
+    "code": 180,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/TaskRunnerSpec.kt": {
+    "blank": 36,
+    "comment": 12,
+    "code": 176,
+    "language": "Kotlin"
+  },
+  "./docs/content/GettingStarted.md": {
+    "blank": 59,
+    "comment": 0,
+    "code": 173,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/updates/UpdateNotifierSpec.kt": {
+    "blank": 40,
+    "comment": 12,
+    "code": 171,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerImagePullProgressReporterSpec.kt": {
+    "blank": 45,
+    "comment": 14,
+    "code": 169,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerHttpConfigSpec.kt": {
+    "blank": 39,
+    "comment": 14,
+    "code": 165,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/ListTasksCommandSpec.kt": {
+    "blank": 30,
+    "comment": 12,
+    "code": 159,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ApplicationSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 158,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/OptionParserSpec.kt": {
+    "blank": 42,
+    "comment": 12,
+    "code": 156,
+    "language": "Kotlin"
+  },
+  "./ROADMAP.md": {
+    "blank": 11,
+    "comment": 0,
+    "code": 154,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerContainerCreationRequestSpec.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 154,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/EventLoggerProviderSpec.kt": {
+    "blank": 48,
+    "comment": 12,
+    "code": 153,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/OptionDefinitionSpec.kt": {
+    "blank": 33,
+    "comment": 12,
+    "code": 150,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/TaskStateMachine.kt": {
+    "blank": 40,
+    "comment": 13,
+    "code": 149,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/windows/namedpipes/NamedPipeSocketFactorySpec.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 145,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/utils/VersionSpec.kt": {
+    "blank": 38,
+    "comment": 14,
+    "code": 144,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/text/TextSpec.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 143,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/CommandLineOptionsParserSpec.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 142,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/windows/namedpipes/NamedPipeTestServer.kt": {
+    "blank": 36,
+    "comment": 12,
+    "code": 142,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/StartupProgressDisplaySpec.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 140,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/PortMappingSpec.kt": {
+    "blank": 24,
+    "comment": 12,
+    "code": 139,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/run/ContainerTTYManagerSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 139,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/unix/UnixNativeMethodsSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 138,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerHostNameResolverSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 137,
+    "language": "Kotlin"
+  },
+  "./tools/log-viewer/controller/run.py": {
+    "blank": 60,
+    "comment": 0,
+    "code": 137,
+    "language": "Python"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/ConsoleDimensionsSpec.kt": {
+    "blank": 48,
+    "comment": 12,
+    "code": 137,
+    "language": "Kotlin"
+  },
+  "./tools/schema/tests/all-properties.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 136,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/ConsoleInfoSpec.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 133,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/ContainerDependencyGraph.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 133,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/test/tests.py": {
+    "blank": 46,
+    "comment": 0,
+    "code": 133,
+    "language": "Python"
+  },
+  "./wrapper/unix/test/tests.py": {
+    "blank": 46,
+    "comment": 0,
+    "code": 132,
+    "language": "Python"
+  },
+  "./.travis.yml": {
+    "blank": 19,
+    "comment": 2,
+    "code": 131,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/updates/UpdateInfoDownloaderSpec.kt": {
+    "blank": 27,
+    "comment": 12,
+    "code": 131,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/HttpLoggingInterceptorSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 129,
+    "language": "Kotlin"
+  },
+  "./gradlew": {
+    "blank": 22,
+    "comment": 37,
+    "code": 129,
+    "language": "Bourne Shell"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/run/ContainerIOStreamerSpec.kt": {
+    "blank": 43,
+    "comment": 13,
+    "code": 127,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/simple/SimpleEventLogger.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 127,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/proxies/ProxyEnvironmentVariablePreprocessorSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 127,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/stages/StageSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 125,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/NamedObjectMapSpec.kt": {
+    "blank": 36,
+    "comment": 12,
+    "code": 124,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/LogMessageBuilderSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 123,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/ContainerCommandResolverSpec.kt": {
+    "blank": 34,
+    "comment": 12,
+    "code": 122,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/SystemInfoSpec.kt": {
+    "blank": 38,
+    "comment": 12,
+    "code": 121,
+    "language": "Kotlin"
+  },
+  "./docs/content/config/Tasks.md": {
+    "blank": 49,
+    "comment": 0,
+    "code": 120,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/ValueConvertersSpec.kt": {
+    "blank": 25,
+    "comment": 12,
+    "code": 120,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/UpgradeCommand.kt": {
+    "blank": 33,
+    "comment": 12,
+    "code": 120,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/src/template.ps1": {
+    "blank": 39,
+    "comment": 1,
+    "code": 120,
+    "language": "PowerShell"
+  },
+  "./app/src/main/kotlin/batect/cli/CommandLineOptionsParser.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 120,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/unix/unixsockets/UnixSocketFactorySpec.kt": {
+    "blank": 28,
+    "comment": 12,
+    "code": 120,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/StartContainerStepRuleSpec.kt": {
+    "blank": 29,
+    "comment": 12,
+    "code": 119,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/RunContainerStepRuleSpec.kt": {
+    "blank": 29,
+    "comment": 12,
+    "code": 119,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/updates/UpdateInfoStorageSpec.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 119,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/RunAsCurrentUserConfigurationProvider.kt": {
+    "blank": 32,
+    "comment": 12,
+    "code": 119,
+    "language": "Kotlin"
+  },
+  "./buildSrc/src/main/groovy/batect/buildtools/performance/PerformanceTestScenario.groovy": {
+    "blank": 38,
+    "comment": 12,
+    "code": 116,
+    "language": "Groovy"
+  },
+  "./app/src/main/kotlin/batect/config/PortMapping.kt": {
+    "blank": 30,
+    "comment": 12,
+    "code": 113,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/Command.kt": {
+    "blank": 28,
+    "comment": 12,
+    "code": 113,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/VolumeMount.kt": {
+    "blank": 27,
+    "comment": 12,
+    "code": 113,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/windows/namedpipes/NamedPipeSocket.kt": {
+    "blank": 30,
+    "comment": 12,
+    "code": 112,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/ProcessRunnerSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 109,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/PathResolverSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 105,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/EnvironmentVariableExpressionSpec.kt": {
+    "blank": 24,
+    "comment": 12,
+    "code": 104,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/unix/UnixConsoleManagerSpec.kt": {
+    "blank": 28,
+    "comment": 12,
+    "code": 104,
+    "language": "Kotlin"
+  },
+  "./docs/content/CLIReference.md": {
+    "blank": 61,
+    "comment": 0,
+    "code": 102,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/FancyEventLogger.kt": {
+    "blank": 24,
+    "comment": 12,
+    "code": 101,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/utils/EditDistanceCalculatorSpec.kt": {
+    "blank": 35,
+    "comment": 12,
+    "code": 100,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/ParallelExecutionManager.kt": {
+    "blank": 24,
+    "comment": 18,
+    "code": 100,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerContainerCreationRequest.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 99,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/RunAsCurrentUserJourneyTest.kt": {
+    "blank": 25,
+    "comment": 17,
+    "code": 99,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/ValueOptionSpec.kt": {
+    "blank": 28,
+    "comment": 12,
+    "code": 98,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/FailureErrorMessageFormatter.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 97,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/updates/UpdateInfoUpdaterSpec.kt": {
+    "blank": 22,
+    "comment": 12,
+    "code": 95,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/updates/UpdateNotifier.kt": {
+    "blank": 24,
+    "comment": 12,
+    "code": 93,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/Console.kt": {
+    "blank": 28,
+    "comment": 13,
+    "code": 93,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/io/deserializers/DurationDeserializerSpec.kt": {
+    "blank": 11,
+    "comment": 14,
+    "code": 92,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/NamedObjectMap.kt": {
+    "blank": 36,
+    "comment": 14,
+    "code": 89,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/DontCleanupAfterSuccessTest.kt": {
+    "blank": 30,
+    "comment": 12,
+    "code": 88,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/CommandSpec.kt": {
+    "blank": 16,
+    "comment": 17,
+    "code": 88,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/cleanup/DeleteTemporaryFileStepRuleSpec.kt": {
+    "blank": 25,
+    "comment": 12,
+    "code": 87,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/cleanup/DeleteTemporaryDirectoryStepRuleSpec.kt": {
+    "blank": 25,
+    "comment": 12,
+    "code": 87,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/Configuration.kt": {
+    "blank": 24,
+    "comment": 13,
+    "code": 86,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/DontCleanupAfterDependencyStartupFailureTest.kt": {
+    "blank": 29,
+    "comment": 12,
+    "code": 85,
+    "language": "Kotlin"
+  },
+  "./wrapper/unix/src/template.sh": {
+    "blank": 26,
+    "comment": 4,
+    "code": 84,
+    "language": "Bourne Shell"
+  },
+  "./tools/schema/build.gradle": {
+    "blank": 28,
+    "comment": 13,
+    "code": 84,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryCredentialsConfigurationFile.kt": {
+    "blank": 25,
+    "comment": 13,
+    "code": 84,
+    "language": "Kotlin"
+  },
+  "./CONTRIBUTING.md": {
+    "blank": 48,
+    "comment": 0,
+    "code": 83,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/execution/model/stages/CleanupStagePlanner.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 83,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/LogMessageWriterSpec.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 82,
+    "language": "Kotlin"
+  },
+  "./app/src/testCommon/kotlin/batect/testutils/ProduceValue.kt": {
+    "blank": 22,
+    "comment": 13,
+    "code": 82,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/Matchers.kt": {
+    "blank": 22,
+    "comment": 12,
+    "code": 81,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerImagePullProgressSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 81,
+    "language": "Kotlin"
+  },
+  "./wrapper/unix/build.gradle": {
+    "blank": 31,
+    "comment": 14,
+    "code": 79,
+    "language": "Gradle"
+  },
+  "./tools/log-viewer/batect": {
+    "blank": 23,
+    "comment": 0,
+    "code": 78,
+    "language": "Bourne Again Shell"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryCredentialsSource.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 78,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/SignalListenerSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 78,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/windows/WindowsConsoleManagerSpec.kt": {
+    "blank": 23,
+    "comment": 12,
+    "code": 78,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/FormattingSpec.kt": {
+    "blank": 27,
+    "comment": 12,
+    "code": 77,
+    "language": "Kotlin"
+  },
+  "./docs/content/config/Overview.md": {
+    "blank": 35,
+    "comment": 0,
+    "code": 75,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/cleanup/RemoveContainerStepRuleSpec.kt": {
+    "blank": 22,
+    "comment": 12,
+    "code": 75,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/TaskRunner.kt": {
+    "blank": 24,
+    "comment": 12,
+    "code": 74,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerContainerCreationRequestFactory.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 74,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerHttpConfig.kt": {
+    "blank": 22,
+    "comment": 12,
+    "code": 74,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/RunOptionsSpec.kt": {
+    "blank": 21,
+    "comment": 12,
+    "code": 74,
+    "language": "Kotlin"
+  },
+  "./gradlew.bat": {
+    "blank": 24,
+    "comment": 2,
+    "code": 74,
+    "language": "DOS Batch"
+  },
+  "./app/src/main/kotlin/batect/os/unix/UnixNativeMethods.kt": {
+    "blank": 21,
+    "comment": 13,
+    "code": 72,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/Proxies.md": {
+    "blank": 30,
+    "comment": 0,
+    "code": 72,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/execution/model/steps/TaskStep.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 71,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/cleanup/StopContainerStepRuleSpec.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 71,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/OptionParser.kt": {
+    "blank": 27,
+    "comment": 12,
+    "code": 71,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/Performance.md": {
+    "blank": 28,
+    "comment": 0,
+    "code": 71,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/CommandFactorySpec.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 69,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/Application.kt": {
+    "blank": 17,
+    "comment": 14,
+    "code": 69,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/RunAsCurrentUserConfigSpec.kt": {
+    "blank": 17,
+    "comment": 12,
+    "code": 69,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/CleanupProgressDisplayLine.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 69,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/EnvironmentVariableExpression.kt": {
+    "blank": 18,
+    "comment": 12,
+    "code": 69,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/cleanup/DeleteTaskNetworkStepRuleSpec.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 68,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/updates/UpdateInfoDownloader.kt": {
+    "blank": 18,
+    "comment": 12,
+    "code": 68,
+    "language": "Kotlin"
+  },
+  "./docs/content/Comparison.md": {
+    "blank": 29,
+    "comment": 0,
+    "code": 67,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerImagePullProgressReporter.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 67,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryCredentialsProviderSpec.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 67,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/RunTaskCommand.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 67,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/CommandLineOptionsSpec.kt": {
+    "blank": 18,
+    "comment": 12,
+    "code": 66,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/stages/CleanupStageSpec.kt": {
+    "blank": 18,
+    "comment": 12,
+    "code": 66,
+    "language": "Kotlin"
+  },
+  "./app/build.gradle": {
+    "blank": 16,
+    "comment": 15,
+    "code": 65,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/config/io/ConfigurationLoader.kt": {
+    "blank": 17,
+    "comment": 12,
+    "code": 65,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/TaskExecutionOrderResolver.kt": {
+    "blank": 27,
+    "comment": 12,
+    "code": 65,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/CreateContainerStepRule.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 64,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/stages/RunStagePlanner.kt": {
+    "blank": 14,
+    "comment": 12,
+    "code": 63,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/utils/Version.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 63,
+    "language": "Kotlin"
+  },
+  "./README.md": {
+    "blank": 22,
+    "comment": 0,
+    "code": 63,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/config/io/ConfigurationExceptionSpec.kt": {
+    "blank": 17,
+    "comment": 12,
+    "code": 63,
+    "language": "Kotlin"
+  },
+  "./app/gradle/performanceTest.gradle": {
+    "blank": 16,
+    "comment": 12,
+    "code": 63,
+    "language": "Gradle"
+  },
+  "./docs/mkdocs.yml": {
+    "blank": 12,
+    "comment": 0,
+    "code": 62,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/VersionInfoCommandSpec.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 61,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/OkHttpHelpers.kt": {
+    "blank": 21,
+    "comment": 13,
+    "code": 61,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/quiet/QuietEventLoggerSpec.kt": {
+    "blank": 18,
+    "comment": 12,
+    "code": 61,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/RunAsCurrentUserConfig.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 61,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/ProcessRunner.kt": {
+    "blank": 20,
+    "comment": 20,
+    "code": 61,
+    "language": "Kotlin"
+  },
+  "./gradle/versioning.gradle": {
+    "blank": 20,
+    "comment": 12,
+    "code": 60,
+    "language": "Gradle"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/WaitForContainerToBecomeHealthyStepRuleSpec.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 59,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/PrerequisiteListDeserializer.kt": {
+    "blank": 25,
+    "comment": 12,
+    "code": 59,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/commands/HelpCommandSpec.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 59,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/text/TextRun.kt": {
+    "blank": 26,
+    "comment": 12,
+    "code": 58,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/StartupProgressDisplay.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 58,
+    "language": "Kotlin"
+  },
+  "./CODE_OF_CONDUCT.md": {
+    "blank": 19,
+    "comment": 0,
+    "code": 57,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/DependencySetDeserializer.kt": {
+    "blank": 25,
+    "comment": 12,
+    "code": 57,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/DurationDeserializer.kt": {
+    "blank": 19,
+    "comment": 12,
+    "code": 57,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/FileLogSinkSpec.kt": {
+    "blank": 14,
+    "comment": 12,
+    "code": 56,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/ValueOption.kt": {
+    "blank": 16,
+    "comment": 16,
+    "code": 56,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/ApplicationInfoLoggerSpec.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 56,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ProxyVariablesJourneyTest.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 56,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/run/ConnectionHijackerSpec.kt": {
+    "blank": 14,
+    "comment": 14,
+    "code": 55,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/build.gradle": {
+    "blank": 22,
+    "comment": 13,
+    "code": 53,
+    "language": "Gradle"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/CleanupProgressDisplaySpec.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 52,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/OptionDefinition.kt": {
+    "blank": 21,
+    "comment": 12,
+    "code": 52,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/run/ContainerKillerSpec.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 51,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/proxies/ProxyEnvironmentVariablesProvider.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 51,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/unix/unixsockets/UnixSocketFactory.kt": {
+    "blank": 16,
+    "comment": 13,
+    "code": 50,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/InterruptionTrapSpec.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 50,
+    "language": "Kotlin"
+  },
+  "./buildSrc/src/main/groovy/batect/buildtools/performance/PerformanceTestReport.groovy": {
+    "blank": 18,
+    "comment": 13,
+    "code": 49,
+    "language": "Groovy"
+  },
+  "./app/src/main/kotlin/batect/cli/options/ValueConverters.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 49,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/updates/UpdateInfoStorage.kt": {
+    "blank": 17,
+    "comment": 12,
+    "code": 49,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/ContainerDependencyGraphProviderSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 49,
+    "language": "Kotlin"
+  },
+  "./app/gradle/versionInfo.gradle": {
+    "blank": 14,
+    "comment": 12,
+    "code": 49,
+    "language": "Gradle"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/testutils/ApplicationRunner.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 48,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerImageNameValidatorSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 48,
+    "language": "Kotlin"
+  },
+  "./docs/content/index.md": {
+    "blank": 18,
+    "comment": 0,
+    "code": 48,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TaskFailedEvent.kt": {
+    "blank": 20,
+    "comment": 12,
+    "code": 48,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/windows/namedpipes/NamedPipeDnsSpec.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 47,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/CreateContainerStepSpec.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 47,
+    "language": "Kotlin"
+  },
+  "./gradle/bintray.gradle": {
+    "blank": 9,
+    "comment": 12,
+    "code": 47,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/os/unix/UnixConsoleManager.kt": {
+    "blank": 18,
+    "comment": 13,
+    "code": 47,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/ui/fancy/StartupProgressDisplayProviderSpec.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 47,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/ConsoleDimensions.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 46,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/unix/unixsockets/UnixSocketDnsSpec.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 46,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/ListTasksCommand.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 46,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/Capability.kt": {
+    "blank": 7,
+    "comment": 13,
+    "code": 46,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryDomainResolverSpec.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 46,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ContainerIOStreamer.kt": {
+    "blank": 14,
+    "comment": 15,
+    "code": 45,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerHttpConfigDefaultsSpec.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 45,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryCredentialsSpec.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 44,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/CommandLineOptions.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 44,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/PathResolver.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 44,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/NonStandardConfigurationFileNameTest.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 43,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/proxies/ProxyEnvironmentVariablePreprocessor.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 43,
+    "language": "Kotlin"
+  },
+  "./travis/wait_for_appveyor.sh": {
+    "blank": 10,
+    "comment": 0,
+    "code": 42,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/ui/ConsoleInfo.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 42,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/EventLoggerProvider.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 41,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/TaskSuggesterSpec.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 40,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/SimpleTaskJourneyTests.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 39,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/LoggerSpec.kt": {
+    "blank": 15,
+    "comment": 12,
+    "code": 38,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerTypes.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 37,
+    "language": "Kotlin"
+  },
+  "./tools/update_sample_projects.sh": {
+    "blank": 10,
+    "comment": 0,
+    "code": 37,
+    "language": "Bourne Shell"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/TaskWithUnhealthyDependencyTest.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 37,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ContainerTTYManager.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 37,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/HelpCommand.kt": {
+    "blank": 14,
+    "comment": 12,
+    "code": 36,
+    "language": "Kotlin"
+  },
+  "./.appveyor.yml": {
+    "blank": 5,
+    "comment": 0,
+    "code": 36,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/FlagOptionSpec.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 35,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/windows/WindowsConsoleManager.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 35,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/InjectionConfigurationSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 35,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/LoggerFactorySpec.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 35,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ContainerWithMountJourneyTests.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 33,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/StandardAdditionalDataSourceSpec.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 33,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/InMemoryLogSink.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 33,
+    "language": "Kotlin"
+  },
+  "./gradle/spotless.gradle": {
+    "blank": 13,
+    "comment": 12,
+    "code": 32,
+    "language": "Gradle"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/defaultvalues/EnvironmentVariableDefaultValueProviderFactorySpec.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 32,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerHostNameResolver.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 31,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/TaskWithPrerequisiteTest.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 31,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/io/deserializers/PathDeserializerSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 31,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImageBuildProgressEventSpec.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 31,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/NoStdinJourneyTest.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 31,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/StartContainerStepRuleBase.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 30,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/stages/Stage.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 30,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/IDEIntegration.md": {
+    "blank": 11,
+    "comment": 0,
+    "code": 30,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/defaultvalues/StaticDefaultValueProviderSpec.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 30,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ListTasksJourneyTest.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 29,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/BuildArtifactsOwnedByRoot.md": {
+    "blank": 17,
+    "comment": 0,
+    "code": 29,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/run/ContainerWaiterSpec.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 29,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/QuietOutputTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 29,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/BuildImageStepRuleSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 29,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/TaskWithExplicitDependencyJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/TaskWithHealthyDependencyJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/WorkingDirectoryOverrideTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/TaskStateMachineProviderSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/SimpleOutputJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryCredentials.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/SymlinksInBuildContextJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ContainerWithCapabilityTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/TaskWithSlowHealthyDependencyJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/os/PathResolverFactorySpec.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./docs/content/tools/Java.md": {
+    "blank": 14,
+    "comment": 0,
+    "code": 28,
+    "language": "Markdown"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/PrivilegedContainerTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/utils/EditDistanceCalculator.kt": {
+    "blank": 7,
+    "comment": 14,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/SimpleTaskWithEnvironmentFromHostTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/testutils/DockerUtils.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/BuildArgJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ContainerWithDependencyJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/NoColorsJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/updates/UpdateInfo.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/VersionInfoCommand.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/LoggingJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/updates/UpdateInfoUpdater.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/AdditionalArgumentsTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/ContainerWithDependencyChainJourneyTest.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 28,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/SystemInfo.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 27,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/text/Text.kt": {
+    "blank": 16,
+    "comment": 12,
+    "code": 27,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/quiet/QuietEventLogger.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 27,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/ContainerMap.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 27,
+    "language": "Kotlin"
+  },
+  "./wrapper/testapp/build.gradle": {
+    "blank": 12,
+    "comment": 12,
+    "code": 26,
+    "language": "Gradle"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/VersionInfoJourneyTest.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 26,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DurationSerializerSpec.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 26,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/PullImageStepRuleSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 26,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/HttpLoggingInterceptor.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 26,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/ContainerCommandResolver.kt": {
+    "blank": 13,
+    "comment": 12,
+    "code": 26,
+    "language": "Kotlin"
+  },
+  "./app/gradle/testCommon.gradle": {
+    "blank": 8,
+    "comment": 12,
+    "code": 25,
+    "language": "Gradle"
+  },
+  "./build.gradle": {
+    "blank": 10,
+    "comment": 12,
+    "code": 25,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/logging/FileLogSink.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 25,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/io/ConfigurationException.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 25,
+    "language": "Kotlin"
+  },
+  "./tools/log-viewer/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 25,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/config/Task.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 25,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerImagePullProgress.kt": {
+    "blank": 11,
+    "comment": 13,
+    "code": 25,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/FlagOption.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 25,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/rules/run/CreateTaskNetworkStepRuleSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/UpgradeJourneyTest.kt": {
+    "blank": 8,
+    "comment": 18,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/HelpJourneyTest.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/StopContainerStepRule.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/ApplicationInfoLogger.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/Formatting.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/config/BuildImageSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/DeleteTemporaryDirectoryStepRule.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/DeleteTemporaryFileStepRule.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./docs/build.gradle": {
+    "blank": 12,
+    "comment": 12,
+    "code": 24,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/WaitForContainerToBecomeHealthyStepRule.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 24,
+    "language": "Kotlin"
+  },
+  "./buildSrc/src/main/groovy/batect/buildtools/performance/PerformanceTestPlugin.groovy": {
+    "blank": 12,
+    "comment": 12,
+    "code": 24,
+    "language": "Groovy"
+  },
+  "./app/src/main/kotlin/batect/logging/LogMessageBuilder.kt": {
+    "blank": 12,
+    "comment": 12,
+    "code": 23,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/DeleteTaskNetworkStepRule.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 23,
+    "language": "Kotlin"
+  },
+  "./app/src/testCommon/kotlin/batect/testutils/DoesNotThrowMatcher.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 22,
+    "language": "Kotlin"
+  },
+  "./docs/content/tools/CircleCI.md": {
+    "blank": 7,
+    "comment": 0,
+    "code": 22,
+    "language": "Markdown"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/OSHelpers.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 22,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/pull/DockerRegistryIndexResolverSpec.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/logging/NullLogSinkSpec.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/StopContainerStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/windows/namedpipes/NamedPipeSocketFactory.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/LogMessageWriter.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/TaskStateMachineProvider.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/StartContainerStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/WaitForContainerToBecomeHealthyStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/Utils.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerCreatedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryDirectoryCreatedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/RemoveContainerStepRule.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/RunContainerStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/RemoveContainerStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryFileCreatedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 21,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImageBuiltEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 20,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/many-tasks/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 20,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/BuildImageStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 20,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerRunFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/RunOptions.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryFileDeletionFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerDidNotBecomeHealthyEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImageBuildFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerStoppedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerStartFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerBecameHealthyEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerStartedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./wrapper/unix/test/test-env/Dockerfile": {
+    "blank": 4,
+    "comment": 0,
+    "code": 19,
+    "language": "Dockerfile"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerRemovedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/SignalListener.kt": {
+    "blank": 11,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerStopFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerCreationFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/gradle/journeyTest.gradle": {
+    "blank": 8,
+    "comment": 12,
+    "code": 19,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/execution/ContainerDependencyGraphProvider.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/RunningContainerExitedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImagePulledEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryDirectoryDeletionFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/task-two-prerequisites/batect.yml": {
+    "blank": 3,
+    "comment": 0,
+    "code": 19,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ContainerRemovalFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 19,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/container-dependency-chain-different-images/batect.yml": {
+    "blank": 3,
+    "comment": 2,
+    "code": 18,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/os/DnsToPathResolver.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerException.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/DeleteTemporaryDirectoryStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImagePullProgressEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/container-dependency-chain-same-image/batect.yml": {
+    "blank": 3,
+    "comment": 2,
+    "code": 18,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryDirectoryDeletedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TemporaryFileDeletedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TaskNetworkCreatedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/PullImageStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/DeleteTemporaryFileStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/cli/options/defaultvalues/LevelOfParallelismDefaultValueProviderSpec.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ImagePullFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/DeleteTaskNetworkStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 18,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/container-two-dependencies-same-image/batect.yml": {
+    "blank": 3,
+    "comment": 2,
+    "code": 17,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/non-standard-name/another-name.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 17,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ConnectionHijacker.kt": {
+    "blank": 9,
+    "comment": 15,
+    "code": 17,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/container-two-dependencies-different-images/batect.yml": {
+    "blank": 3,
+    "comment": 2,
+    "code": 17,
+    "language": "YAML"
+  },
+  "./wrapper/windows/src/template.cmd": {
+    "blank": 10,
+    "comment": 12,
+    "code": 17,
+    "language": "DOS Batch"
+  },
+  "./app/gradle/integrationTest.gradle": {
+    "blank": 7,
+    "comment": 12,
+    "code": 17,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/BuildImageStepRule.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 17,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-health-check-overrides/batect.yml": {
+    "blank": 3,
+    "comment": 0,
+    "code": 17,
+    "language": "YAML"
+  },
+  "./.idea/gradle.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 17,
+    "language": "XML"
+  },
+  "./app/src/journeyTest/resources/container-with-dependency-chain/batect.yml": {
+    "blank": 5,
+    "comment": 0,
+    "code": 17,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/docker/DockerVersionInfoSpec.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 17,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/CleanupProgressDisplay.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TaskNetworkCreationFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryCredentialsProvider.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/StandardAdditionalDataSource.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ContainerIOStreams.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TaskNetworkDeletionFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/TaskNetworkDeletedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/UserInterruptedExecutionEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/events/ExecutionFailedEventSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/src/unitTest/kotlin/batect/execution/model/steps/CreateTaskNetworkStepSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/gradle/unitTest.gradle": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Gradle"
+  },
+  "./app/src/unitTest/kotlin/batect/config/PullImageSpec.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 16,
+    "language": "Kotlin"
+  },
+  "./app/gradle/spotless.gradle": {
+    "blank": 8,
+    "comment": 12,
+    "code": 15,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/config/TaskMap.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 15,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryDomainResolver.kt": {
+    "blank": 10,
+    "comment": 13,
+    "code": 15,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/CommandFactory.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 15,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/run-as-current-user-with-mount/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 15,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/run-as-current-user/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 15,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/task-with-prerequisite/batect.yml": {
+    "blank": 3,
+    "comment": 0,
+    "code": 15,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/docker/DurationSerializer.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./buildSrc/src/main/groovy/batect/buildtools/performance/PerformanceTestExtension.groovy": {
+    "blank": 8,
+    "comment": 12,
+    "code": 14,
+    "language": "Groovy"
+  },
+  "./app/src/journeyTest/resources/run-as-current-user/test.sh": {
+    "blank": 4,
+    "comment": 0,
+    "code": 14,
+    "language": "Bourne Shell"
+  },
+  "./docs/content/tips/WaitingForDependenciesToBeReady.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 14,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/DeserializationExtensions.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./wrapper/testapp/src/main/java/testapp/Application.java": {
+    "blank": 8,
+    "comment": 12,
+    "code": 14,
+    "language": "Java"
+  },
+  "./app/src/journeyTest/resources/container-with-capability/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 14,
+    "language": "YAML"
+  },
+  "./gradle/utilities.gradle": {
+    "blank": 8,
+    "comment": 12,
+    "code": 14,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/execution/TaskSuggester.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/kotlin/batect/journeytests/testutils/CleanupAssertions.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerHttpConfigDefaults.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/defaultvalues/EnvironmentVariableDefaultValueProviderFactory.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 14,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/unix/unixsockets/UnixSocketDns.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 13,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ContainerKiller.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 13,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-dependency/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./docs/content/tools/TravisCI.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 13,
+    "language": "Markdown"
+  },
+  "./docs/content/tools/Ruby.md": {
+    "blank": 7,
+    "comment": 0,
+    "code": 13,
+    "language": "Markdown"
+  },
+  "./app/src/journeyTest/resources/task-with-healthy-dependency/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/privileged-container/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/task-with-slow-healthy-dependency/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/os/windows/namedpipes/NamedPipeDns.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 13,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/ParallelExecutionManagerProvider.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 13,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/task-with-explicit-dependency/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/task-with-unhealthy-dependency/batect.yml": {
+    "blank": 4,
+    "comment": 0,
+    "code": 13,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/PathDeserializer.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 13,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/simple-task-with-environment-from-host/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 12,
+    "language": "YAML"
+  },
+  "./.codecov.yml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 12,
+    "language": "YAML"
+  },
+  "./docs/content/tools/Golang.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 12,
+    "language": "Markdown"
+  },
+  "./docs/content/tools/Node.md": {
+    "blank": 6,
+    "comment": 0,
+    "code": 12,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/cleanup/CleanupTaskStepRule.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/InterruptionTrap.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/CISetup.md": {
+    "blank": 4,
+    "comment": 0,
+    "code": 12,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/os/NativeMethods.kt": {
+    "blank": 10,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/EventLogger.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/KodeinLoggingExtensions.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/PullImageStepRule.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./docs/content/QuickStart.md": {
+    "blank": 7,
+    "comment": 0,
+    "code": 12,
+    "language": "Markdown"
+  },
+  "./app/src/main/kotlin/batect/config/ImageSource.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 12,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/simple-task-with-environment/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./RELEASING.md": {
+    "blank": 4,
+    "comment": 0,
+    "code": 11,
+    "language": "Markdown"
+  },
+  "./app/src/journeyTest/resources/build-arg/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./tools/log-viewer/kibana/health-check.sh": {
+    "blank": 4,
+    "comment": 0,
+    "code": 11,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/TaskStepRule.kt": {
+    "blank": 9,
+    "comment": 12,
+    "code": 11,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-mount/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/working-directory-override/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ImageBuildProgressEvent.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 11,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/utils/CollectionExtensions.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 11,
+    "language": "Kotlin"
+  },
+  "./tools/log-viewer/elasticsearch/health-check.sh": {
+    "blank": 4,
+    "comment": 0,
+    "code": 11,
+    "language": "Bourne Shell"
+  },
+  "./tmp/batect.yml": {
+    "blank": 1,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/config/HealthCheckConfig.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 11,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/CreateTaskNetworkStepRule.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 11,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-cached-mount/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 11,
+    "language": "YAML"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/CloseableByteArrayOutputStream.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 10,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/windows/namedpipes/NamedPipe.kt": {
+    "blank": 8,
+    "comment": 12,
+    "code": 10,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/privileged-container/task.sh": {
+    "blank": 4,
+    "comment": 1,
+    "code": 10,
+    "language": "Bourne Shell"
+  },
+  "./app/src/journeyTest/resources/container-with-capability/task.sh": {
+    "blank": 4,
+    "comment": 1,
+    "code": 10,
+    "language": "Bourne Shell"
+  },
+  "./app/src/journeyTest/resources/simple-task-using-custom-dockerfile/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 10,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/docker/run/ContainerWaiter.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 10,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/build-image-dockerignore/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 10,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/docker/pull/DockerRegistryIndexResolver.kt": {
+    "blank": 7,
+    "comment": 14,
+    "code": 10,
+    "language": "Kotlin"
+  },
+  "./appveyor/enable-docker.ps1": {
+    "blank": 4,
+    "comment": 1,
+    "code": 9,
+    "language": "PowerShell"
+  },
+  "./app/src/main/kotlin/batect/logging/LogMessage.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 9,
+    "language": "Kotlin"
+  },
+  "./docs/content/tips/Windows.md": {
+    "blank": 4,
+    "comment": 0,
+    "code": 9,
+    "language": "Markdown"
+  },
+  "./batect.iml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 9,
+    "language": "XML"
+  },
+  "./app/src/journeyTest/resources/symlinks-in-build-context/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/simple-task-container-command/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/simple-task-using-image/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./app/src/integrationTest/resources/test-images/image-with-expose/Dockerfile": {
+    "blank": 8,
+    "comment": 2,
+    "code": 9,
+    "language": "Dockerfile"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/StartContainerStepRule.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 9,
+    "language": "Kotlin"
+  },
+  "./buildSrc/build.gradle": {
+    "blank": 6,
+    "comment": 12,
+    "code": 9,
+    "language": "Gradle"
+  },
+  "./app/src/journeyTest/resources/additional-arguments/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/ui/fancy/StartupProgressDisplayProvider.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 9,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/proxy-variables/build-env/task.sh": {
+    "blank": 1,
+    "comment": 0,
+    "code": 9,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/run/RunContainerStepRule.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 9,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/proxy-variables/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./docs/content/SampleProjects.md": {
+    "blank": 3,
+    "comment": 0,
+    "code": 9,
+    "language": "Markdown"
+  },
+  "./app/src/journeyTest/resources/simple-task-using-dockerfile/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 9,
+    "language": "YAML"
+  },
+  "./app/gradle/jacoco.gradle": {
+    "blank": 6,
+    "comment": 12,
+    "code": 9,
+    "language": "Gradle"
+  },
+  "./app/src/performanceTest/resources/single-container-built-image/batect.yml": {
+    "blank": 1,
+    "comment": 0,
+    "code": 8,
+    "language": "YAML"
+  },
+  "./app/src/journeyTest/resources/simple-task-dockerfile-command/batect.yml": {
+    "blank": 2,
+    "comment": 0,
+    "code": 8,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerImageNameValidator.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 8,
+    "language": "Kotlin"
+  },
+  "./travis/install_docker.sh": {
+    "blank": 4,
+    "comment": 2,
+    "code": 8,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/logging/Logger.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 8,
+    "language": "Kotlin"
+  },
+  "./.idea/modules.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "XML"
+  },
+  "./app/src/main/kotlin/batect/utils/ThrowableExtensions.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 8,
+    "language": "Kotlin"
+  },
+  "./app/src/integrationTest/resources/test-images/image-without-expose/Dockerfile": {
+    "blank": 7,
+    "comment": 2,
+    "code": 8,
+    "language": "Dockerfile"
+  },
+  "./app/src/main/kotlin/batect/logging/LoggerFactory.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 8,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/task-with-healthy-dependency/http-server/index.html": {
+    "blank": 0,
+    "comment": 0,
+    "code": 8,
+    "language": "HTML"
+  },
+  "./app/src/performanceTest/resources/single-container-existing-image/batect.yml": {
+    "blank": 1,
+    "comment": 0,
+    "code": 8,
+    "language": "YAML"
+  },
+  "./app/src/main/kotlin/batect/VersionInfo.kt": {
+    "blank": 6,
+    "comment": 15,
+    "code": 8,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/OperatingSystem.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/PathResolverFactory.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./tools/log-viewer/controller/Dockerfile": {
+    "blank": 3,
+    "comment": 0,
+    "code": 7,
+    "language": "Dockerfile"
+  },
+  "./settings.gradle": {
+    "blank": 5,
+    "comment": 13,
+    "code": 7,
+    "language": "Gradle"
+  },
+  "./app/src/main/kotlin/batect/cli/options/defaultvalues/LevelOfParallelismDefaultValueProvider.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/config/io/deserializers/EnvironmentDeserializer.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/RunAsCurrentUserConfiguration.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/utils/Json.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 7,
+    "language": "Kotlin"
+  },
+  "./wrapper/build.gradle": {
+    "blank": 5,
+    "comment": 12,
+    "code": 7,
+    "language": "Gradle"
+  },
+  "./wrapper/windows/test/fakes/java10/java.cmd": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "DOS Batch"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ImageBuiltEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/test/fakes/java8/java.cmd": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "DOS Batch"
+  },
+  "./app/src/main/kotlin/batect/docker/JsonUtils.kt": {
+    "blank": 7,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/test/fakes/java9/java.cmd": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "DOS Batch"
+  },
+  "./wrapper/windows/test/fakes/java11/java.cmd": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "DOS Batch"
+  },
+  "./tools/log-viewer/kibana/Dockerfile": {
+    "blank": 3,
+    "comment": 1,
+    "code": 6,
+    "language": "Dockerfile"
+  },
+  "./app/src/main/kotlin/batect/execution/model/rules/TaskStepRuleEvaluationResult.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TemporaryFileCreatedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/ui/OutputStyle.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ImagePullProgressEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ContainerCreatedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ImagePulledEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TemporaryDirectoryCreatedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./.idea/vcs.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "XML"
+  },
+  "./app/src/main/kotlin/batect/execution/model/stages/NextStepResult.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 6,
+    "language": "Kotlin"
+  },
+  "./app/gradle/profiling.gradle": {
+    "blank": 6,
+    "comment": 15,
+    "code": 6,
+    "language": "Gradle"
+  },
+  "./.idea/misc.xml": {
+    "blank": 0,
+    "comment": 0,
+    "code": 6,
+    "language": "XML"
+  },
+  "./app/src/journeyTest/resources/proxy-variables/build-env/build.sh": {
+    "blank": 1,
+    "comment": 0,
+    "code": 5,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/execution/CleanupOption.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/os/ConsoleManager.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./wrapper/windows/test/fakes/java7/java.cmd": {
+    "blank": 0,
+    "comment": 0,
+    "code": 5,
+    "language": "DOS Batch"
+  },
+  "./app/src/main/kotlin/batect/cli/options/defaultvalues/DefaultValueProvider.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-dependency/http-server/Dockerfile": {
+    "blank": 3,
+    "comment": 0,
+    "code": 5,
+    "language": "Dockerfile"
+  },
+  "./app/src/testCommon/kotlin/batect/testutils/SpekDslExtensions.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TaskNetworkCreatedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/options/defaultvalues/StaticDefaultValueProvider.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerVersionInfo.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ContainerStartedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/task-with-healthy-dependency/http-server/Dockerfile": {
+    "blank": 3,
+    "comment": 0,
+    "code": 5,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/container-with-dependency-chain/proxy/Dockerfile": {
+    "blank": 3,
+    "comment": 0,
+    "code": 5,
+    "language": "Dockerfile"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ContainerStoppedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ContainerRemovedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/RunningContainerExitedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/ContainerBecameHealthyEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TemporaryFileDeletedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TemporaryDirectoryDeletedEvent.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 5,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/docker/DockerConstants.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/cli/commands/Command.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/container-with-health-check-overrides/dependency/Dockerfile": {
+    "blank": 2,
+    "comment": 0,
+    "code": 4,
+    "language": "Dockerfile"
+  },
+  "./app/src/unitTest/kotlin/batect/testutils/TestImageSource.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/logging/LogSink.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TaskEventSink.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./tools/log-viewer/elasticsearch/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 4,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/task-with-slow-healthy-dependency/dependency/health-check.sh": {
+    "blank": 2,
+    "comment": 0,
+    "code": 4,
+    "language": "Bourne Shell"
+  },
+  "./docs/build.sh": {
+    "blank": 3,
+    "comment": 1,
+    "code": 4,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/logging/NullLogSink.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/task-with-unhealthy-dependency/http-server/Dockerfile": {
+    "blank": 3,
+    "comment": 0,
+    "code": 4,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/container-with-mount/task.sh": {
+    "blank": 2,
+    "comment": 0,
+    "code": 4,
+    "language": "Bourne Shell"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TaskNetworkDeletedEvent.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 4,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/task-with-unhealthy-dependency/http-server/health-check.sh": {
+    "blank": 1,
+    "comment": 0,
+    "code": 4,
+    "language": "Bourne Shell"
+  },
+  "./app/src/journeyTest/resources/task-with-healthy-dependency/http-server/health-check.sh": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Bourne Shell"
+  },
+  "./app/src/journeyTest/resources/task-with-slow-healthy-dependency/dependency/Dockerfile": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/container-with-health-check-overrides/dependency/health-check.sh": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Bourne Shell"
+  },
+  "./docs/content/tools/Docker.md": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Markdown"
+  },
+  "./app/src/testCommon/kotlin/batect/testutils/CommonOSHelpers.kt": {
+    "blank": 6,
+    "comment": 12,
+    "code": 3,
+    "language": "Kotlin"
+  },
+  "./app/src/journeyTest/resources/symlinks-in-build-context/build-env/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 3,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/build-arg/build-env/Dockerfile": {
+    "blank": 2,
+    "comment": 0,
+    "code": 3,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/proxy-variables/build-env/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 3,
+    "language": "Dockerfile"
+  },
+  "./app/src/main/kotlin/batect/execution/model/events/TaskEvent.kt": {
+    "blank": 5,
+    "comment": 12,
+    "code": 2,
+    "language": "Kotlin"
+  },
+  "./app/src/performanceTest/resources/single-container-built-image/containers/test-env/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/task-with-explicit-dependency/http-server/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/simple-task-dockerfile-command/build-env/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Dockerfile"
+  },
+  "./app/src/integrationTest/resources/test-images/basic-image/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Dockerfile"
+  },
+  "./app/src/journeyTest/resources/task-with-healthy-dependency/build-env/Dockerfile": {
+    "blank": 1,
+    "comment": 0,
+    "code": 2,
+    "language": "Dockerfile"
+  },
+  "./tmp/file.js": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "JavaScript"
+  },
+  "./app/src/journeyTest/resources/simple-task-using-dockerfile/build-env/Dockerfile": {
+    "blank": 0,
+    "comment": 0,
+    "code": 1,
+    "language": "Dockerfile"
+  },
+  "SUM": {
+    "blank": 9838,
+    "comment": 5389,
+    "code": 36943,
+    "nFiles": 565
+  }
+}

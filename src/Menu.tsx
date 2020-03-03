@@ -23,8 +23,14 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
   };
 
   const onFileChange = (e: any) => {
-    e.target.files[0].text().then((text: string) => {
-      dispatch({ type: 'uploadFile', inputData: JSON.parse(text) });
+    const file = e.target.files[0];
+    const filename = file.name;
+    file.text().then((text: string) => {
+      dispatch({
+        type: 'uploadFile',
+        inputData: JSON.parse(text),
+        name: filename.slice(0, filename.lastIndexOf('.')),
+      });
       toggleMenu();
     });
   };
