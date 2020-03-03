@@ -6,6 +6,7 @@ import React, {
   useMemo,
 } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import Treemap from './Treemap';
 import Menu from './Menu';
 import { reducer, initialState } from './state';
@@ -18,6 +19,8 @@ const App = () => {
     () => buildTreeDataFromClocData(inputData, filter),
     [inputData, filter],
   );
+
+  const [hoveredNode, setHoveredNode] = useState(null);
 
   const svgRef = useRef(null);
   const [svgDimensions, setSvgDimensions] = useState({ width: 1, height: 1 });
@@ -58,10 +61,15 @@ const App = () => {
             treeData={currentRootNode || wholeTreeData}
             depth={currentDepth}
             isCurrentRoot
+            hoveredNode={hoveredNode}
+            setHoveredNode={setHoveredNode}
             dispatch={dispatch}
           />
         </svg>
       </main>
+      {hoveredNode && (
+        <Footer name={hoveredNode.getFullPath()} size={hoveredNode.size} />
+      )}
     </div>
   );
 };
