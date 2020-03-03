@@ -52,7 +52,7 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
         className={`${display} fixed top-0 right-0 bottom-0 left-0 bg-fade`}
       />
       <div
-        className={`${display} fixed top-0 bottom-0 left-0 shadow-2xl bg-white border-r border-gray-300`}
+        className={`${display} fixed top-0 bottom-0 left-0 max-w-full shadow-2xl bg-white border-r border-gray-300`}
       >
         <header className="flex justify-between border-b border-gray-300">
           <h2 className="text-xl m-4">Options</h2>
