@@ -1,7 +1,8 @@
 import { Reducer } from 'react';
 import { ClocMap, TreeNode } from './buildTreeData';
-import mortgageData from './exampleData/whatif.mortgage.json';
 import reactRouterData from './exampleData/react-router.json';
+import batectData from './exampleData/batect.json';
+import mortgageData from './exampleData/whatif.mortgage.json';
 
 type State = {
   name: string;
@@ -14,7 +15,8 @@ type State = {
 export type Action =
   | { type: 'setFilter'; filter: string }
   | { type: 'uploadFile'; name: string; inputData: ClocMap }
-  | { type: 'selectNode'; node: TreeNode; depth: number };
+  | { type: 'selectNode'; node: TreeNode; depth: number }
+  | { type: 'selectExample'; name: string };
 
 export const reducer: Reducer<State, Action> = (
   state: State,
@@ -45,13 +47,24 @@ export const reducer: Reducer<State, Action> = (
         currentDepth: action.depth,
       };
     }
+    case 'selectExample': {
+      return {
+        name: action.name,
+        filter: state.filter,
+        inputData: exampleInputs[action.name],
+        currentRootNode: null,
+        currentDepth: 0,
+      };
+    }
   }
 };
 
 const exampleInputs: Record<string, ClocMap> = {
-  mortgage: (mortgageData as any) as ClocMap,
   'react-router': (reactRouterData as any) as ClocMap,
+  batect: (batectData as any) as ClocMap,
+  mortgage: (mortgageData as any) as ClocMap,
 };
+export const examples = Object.keys(exampleInputs);
 const initialExample = 'react-router';
 const initialInput = exampleInputs[initialExample];
 const initialFilter = 'package-lock.json';

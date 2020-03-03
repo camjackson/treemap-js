@@ -1,6 +1,6 @@
 import React, { FC, Dispatch, useRef } from 'react';
 import Cross from './icons/Cross';
-import { Action } from './state';
+import { Action, examples } from './state';
 
 type Props = {
   showMenu: boolean;
@@ -22,7 +22,7 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
     filterInputRef.current.focus();
   };
 
-  const onFileChange = (e: any) => {
+  const uploadFile = (e: any) => {
     const file = e.target.files[0];
     const filename = file.name;
     file.text().then((text: string) => {
@@ -35,8 +35,13 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
     });
   };
 
-  const onFilterBlur = (e: any) => {
+  const setFilter = (e: any) => {
     dispatch({ type: 'setFilter', filter: e.target.value });
+  };
+
+  const selectExample = (e: any) => {
+    dispatch({ type: 'selectExample', name: e.target.value });
+    toggleMenu();
   };
 
   const display = showMenu ? 'block' : 'hidden';
@@ -57,6 +62,14 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
         </header>
         <ul>
           <Li>
+            <label>Choose example repo:</label>
+            <select className="border ml-3" onChange={selectExample}>
+              {examples.map(exampleName => (
+                <option key={exampleName}>{exampleName}</option>
+              ))}
+            </select>
+          </Li>
+          <Li>
             <label className="block cursor-pointer">
               Upload cloc JSON, generated like:
               <div className="font-mono">
@@ -67,7 +80,7 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
                 type="file"
                 multiple={false}
                 accept="application/json"
-                onChange={onFileChange}
+                onChange={uploadFile}
               />
             </label>
           </Li>
@@ -79,7 +92,7 @@ const Menu: FC<Props> = ({ showMenu, initialFilter, toggleMenu, dispatch }) => {
                 className="mx-3 px-2 border border-gray-400 focus:border-blue-500"
                 type="text"
                 defaultValue={initialFilter}
-                onBlur={onFilterBlur}
+                onBlur={setFilter}
               />
             </label>
             <span className="italic">(Separate multiple filters with |)</span>
