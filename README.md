@@ -1,10 +1,3 @@
 # Treemap
 
-It maps trees (not really).
-
-TODO:
-
-- Menu with advanced options:
-  - Language filtering / highlighting
-  - File name filtering
-- Click a file to filter it out
+Generates treemaps for visualising relative source code size. [treemap.camjackson.net](https://treemap.camjackson.net)

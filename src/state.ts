@@ -1,5 +1,6 @@
 import { Reducer } from 'react';
 import { ClocMap, TreeNode } from './buildTreeData';
+import reactData from './exampleData/react.json';
 import reactRouterData from './exampleData/react-router.json';
 import batectData from './exampleData/batect.json';
 import mortgageData from './exampleData/whatif.mortgage.json';
@@ -61,6 +62,7 @@ export const reducer: Reducer<State, Action> = (
 
 const exampleInputs: Record<string, ClocMap> = {
   'react-router': (reactRouterData as any) as ClocMap,
+  react: (reactData as any) as ClocMap,
   batect: (batectData as any) as ClocMap,
   mortgage: (mortgageData as any) as ClocMap,
 };
